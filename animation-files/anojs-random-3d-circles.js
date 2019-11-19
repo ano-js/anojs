@@ -12,6 +12,12 @@ canvas.height = innerHeight
 
 let c = canvas.getContext("2d")
 
+// Event Listeners
+addEventListener("resize", () => {
+  innerWidth = window.innerWidth
+  innerHeight = window.innerHeight
+})
+
 class Ball {
   constructor(x, y, dx, dy, radius, color) {
     this.x = x

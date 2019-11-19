@@ -12,6 +12,12 @@ canvas.height = innerHeight
 
 let c = canvas.getContext("2d")
 
+// Event Listeners  
+addEventListener("resize", () => {
+  innerWidth = window.innerWidth
+  innerHeight = window.innerHeight
+})
+
 let position = innerHeight / 2
 let wavelength = 0.01
 let frequency = 1

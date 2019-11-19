@@ -36,6 +36,11 @@ addEventListener('resize', () => {
   init()
 })
 
+addEventListener("resize", () => {
+  innerWidth = window.innerWidth
+  innerHeight = window.innerHeight
+})
+
 // Objects
 class Ball {
   constructor(x, y, dx, dy, radius, color) {

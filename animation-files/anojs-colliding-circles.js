@@ -37,6 +37,11 @@ addEventListener("mousemove", event => {
   mouse.y = event.y
 })
 
+addEventListener("resize", () => {
+  innerWidth = window.innerWidth
+  innerHeight = window.innerHeight
+})
+
 class Particle {
   constructor(x, y, dx, dy, radius, strokeColor, fillColor) {
     this.x = x

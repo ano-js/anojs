@@ -1,8 +1,8 @@
-let canvasDiv = document.querySelector("#anojs-growing-circles")
+let canvasDiv = document.querySelector("#anojs-growing-circles-gray")
 
-canvasDiv.innerHTML += "<canvas id='anojs-growing-circles-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-growing-circles-gray-canvas'></canvas>"
 
-let canvas = document.querySelector("#anojs-growing-circles-canvas")
+let canvas = document.querySelector("#anojs-growing-circles-gray-canvas")
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -17,11 +17,6 @@ var mouse = {
 window.addEventListener("mousemove", (event) => {
   mouse.x = event.x;
   mouse.y = event.y;
-})
-
-addEventListener("resize", () => {
-  innerWidth = window.innerWidth
-  innerHeight = window.innerHeight
 })
 
 var x = 700;
@@ -59,11 +54,11 @@ function Circle(x, y, dx, dy, radius, color) {
     this.y += this.dy;
 
     // Interactivity
-    if (mouse.x - this.x < 100 && mouse.x - this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100 && this.radius < 50) {
-      this.radius += 2;
+    if (mouse.x - this.x < 100 && mouse.x - this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100 && this.radius < 40) {
+      this.radius += 1.5;
     }
     else if (this.radius > this.origRadius) {
-      this.radius -= 2;
+      this.radius -= 1.5;
     }
 
     this.draw();
@@ -72,15 +67,15 @@ function Circle(x, y, dx, dy, radius, color) {
 
 var circle = new Circle(x, y, dx, dy, radius);
 
-var colorArray = ["rgb(212, 170, 76)", "rgb(116, 187, 245)", "rgb(242, 108, 99)", "rgb(94, 238, 126)"];
+var colorArray = ["rgb(100, 100, 100)", "rgb(70, 70, 70)", "rgb(85, 85, 85)"];
 
 var circles = [];
 
-for (var i = 0; i < 500; i++) {
+for (var i = 0; i < 400; i++) {
   var x = Math.random() * window.innerWidth + radius;
   var y = Math.random() * window.innerHeight + radius;
-  var dx = (Math.random() - 0.5) * 3;
-  var dy = (Math.random() - 0.5) * 3;
+  var dx = (Math.random() - 0.5) * 1.5;
+  var dy = (Math.random() - 0.5) * 1.5;
   var radius = (Math.random() * 5) + 5;
   var color = colorArray[Math.floor(Math.random() * colorArray.length)];
 

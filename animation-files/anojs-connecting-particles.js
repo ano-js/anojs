@@ -38,6 +38,11 @@ addEventListener("click", (event) => {
   // closestParticle.centroid = true
 })
 
+addEventListener("resize", () => {
+  innerWidth = window.innerWidth
+  innerHeight = window.innerHeight
+})
+
 class Particle {
   constructor(x, y, dx, dy, radius, color, centroid) {
     this.x = x

@@ -31,6 +31,11 @@ addEventListener("mousemove", event => {
   mouse.y = event.y
 })
 
+addEventListener("resize", () => {
+  innerWidth = window.innerWidth
+  innerHeight = window.innerHeight
+})
+
 addEventListener("click", () => {
   goingRight = goingRight ? false : true
 })
