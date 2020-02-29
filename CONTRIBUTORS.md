@@ -1,3 +1,8 @@
+# Ano.js Contributors
+Thank you so much for being a part of the Ano.js team! This is a great way to get involved with the community, as well as improving your software engineering skills and your professional career. Below is more information on what your job is, what you will be doing, and how you will do it.
+
+
+
 ## Educational Links
 If you don't know how to create a web animation or are confused about anything, you can take a look at these links based on what you're confused on
 
