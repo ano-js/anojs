@@ -34,8 +34,9 @@ All animations that you create give you recognition. The more contributions you 
 
 ## How do I get started?
 1. [Become an Ano.js contributor](https://anojs.com/join-us)
-2. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
-3. Check out [OPTIMIZATION.md](OPTIMIZATION.md). This will give you information on how to optimize your animations
+2. Be sure to star and watch this repository for updates
+3. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
+4. Check out [OPTIMIZATION.md](OPTIMIZATION.md). This will give you information on how to optimize your animations
   
 
 ## Questions?
