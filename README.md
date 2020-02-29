@@ -39,6 +39,6 @@ All animations that you create give you recognition. The more contributions you 
   
 
 ## Questions?
-If you have any questions, feel free to open an issue describing your problem or question. 
+If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question. 
 
 Or, you can contact Calix Huang at calix.huang1@gmail.com
