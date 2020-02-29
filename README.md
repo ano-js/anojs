@@ -40,7 +40,6 @@ All animations that you create give you recognition. The more contributions you 
     - Get help, announcements, and updates on Ano.js
     - Chat with fellow contributors 
 4. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
-5. Check out [OPTIMIZATION.md](OPTIMIZATION.md). This will give you information on how to optimize your animations
   
 
 ## Questions?
