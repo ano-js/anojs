@@ -24,7 +24,6 @@ You don't need to know how to code to be a contributor. But, in order to contrib
 If you don't have some of these skills, please view the links below - these are links to tutorials for every skill listed above, so you can start coding ASAP!
 - [Basic HTML/CSS/JS Crash Course (12 mins)](https://www.youtube.com/watch?v=O9Uauq-Gd0c) <br/>
 - [Git/GitHub Crash Course for Absolute Beginners (30 mins)](https://www.youtube.com/watch?v=SWYqp7iY_Tc) <br/>
-- [Complete HTML5 Canvas + Javascript Web Animation Course (4 hours)](https://www.youtube.com/playlist?list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL) <br/>
 
 
 ## Creating web animations
@@ -43,7 +42,7 @@ Ano.js supports animations created with three different technologies:
 These technologies have been labelled with their difficulty level, what type of animation they're good at creating, along with some examples to see what has been done with each. Please pick the technology level that suits you best. Remember, all three technologies can create some amazing web animations!
 
 To learn any of the three technologies, the links have been put down below:
-- [HTML5 Canvas Complete Course (4 hours)](https://www.youtube.com/playlist?list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL)
+- [Complete HTML5 Canvas + Javascript Web Animation Course (4 hours)](https://www.youtube.com/playlist?list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL)
 - [Mo.js Crash Course (15 mins)](https://www.youtube.com/watch?v=yRxWa8lXasI)
 - [Anime.js Crash Course (10 mins](https://www.youtube.com/watch?v=uRDLFXxihgc)
 
