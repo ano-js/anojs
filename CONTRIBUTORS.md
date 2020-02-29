@@ -41,10 +41,12 @@ Ano.js supports animations created with three different technologies:
 
 These technologies have been labelled with their difficulty level, what type of animation they're good at creating, along with some examples to see what has been done with each. Please pick the technology level that suits you best. Remember, all three technologies can create some amazing web animations!
 
+<b> NOTE: Some of these tutorials use Codepen.io, but in order to contribute to Ano.js, you must do it in a .js file. See [OPTIMIZATION.md](OPTIMIZATION.md) for more details.
+
 To learn any of the three technologies, the links have been put down below:
 - [Complete HTML5 Canvas + Javascript Web Animation Course (4 hours)](https://www.youtube.com/playlist?list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL)
-- [Mo.js Crash Course (15 mins)](https://www.youtube.com/watch?v=yRxWa8lXasI)
-- [Anime.js Crash Course (10 mins](https://www.youtube.com/watch?v=uRDLFXxihgc)
+- [Mo.js Course Playlist (45 mins)](https://www.youtube.com/playlist?list=PLnVvHXDr672IPMHAbXU72xk3p9-NeCqQ_)
+- [Anime.js Crash Course (1 hour)](https://www.youtube.com/playlist?list=PLnVvHXDr672JR_vWE2MsnGfl10KSmue5V)
 
 Documentation Links:
 - [Mo.js Documentation](https://mojs.github.io/tutorials/)
