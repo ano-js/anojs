@@ -3,7 +3,7 @@ Thank you so much for being a part of the Ano.js team! This is a great way to ge
 
 General announcements will be an issue that is open to everyone. Important announcements will be announced by email blast.
 
-<b> If you are not already a contributor, become one at [anojs.com/join-us](http://anojs.com/join-us)! </b>
+<b> If you are not already a contributor, become one at [anojs.com/join-us](https://anojs.com/join-us)! </b>
 
 
 ## Assessing your skill level
