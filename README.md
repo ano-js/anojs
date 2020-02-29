@@ -35,10 +35,10 @@ All animations that you create give you recognition. The more contributions you 
 ## How do I get started?
 1. [Become an Ano.js contributor](https://anojs.com/join-us)
 2. Be sure to star and watch this repository
-  - Will provide updates
+    - Will provide updates
 3. [Join the Slack Channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU)
-  - Get help, announcements, and updates on Ano.js
-  - Chat with fellow contributors 
+    - Get help, announcements, and updates on Ano.js
+    - Chat with fellow contributors 
 4. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
 5. Check out [OPTIMIZATION.md](OPTIMIZATION.md). This will give you information on how to optimize your animations
   
