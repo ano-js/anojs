@@ -1,6 +1,8 @@
 # Ano.js Contributors
 Thank you so much for being a part of the Ano.js team! This is a great way to get involved with the community, as well as improving your software engineering skills and your professional career. Below is more information on what your job is, what you will be doing, and how you will do it.
 
+If you are not already a contributor, become one at [anojs.com/join-us](http://anojs.com/join-us)!
+
 
 ## Assessing your skill level
 You don't need to know how to code to be a contributor. But, in order to contribute properly, you should learn some basic skills. Here are the skills you will need to be able to contribute a huge amount to Ano.js:
@@ -32,7 +34,14 @@ The way to contribute to Ano.js is very simple:
     - If your pull request is accepted, your animation will be deployed directly (with your name on it) to the website and users can start using it!
     - If your pull request is rejected, we will specifically tell you why so you can fix it and make another pull request.
 
+
 ## Contribution Rules
 - Comment your code
 - Make your code readable
 - Use the [Ano.js optimization techniques](OPTIMIZATION.md)
+
+
+## Questions?
+If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question. 
+
+Or, you can contact Calix Huang at calix.huang1@gmail.com
