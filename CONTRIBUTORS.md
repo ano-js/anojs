@@ -20,17 +20,17 @@ If you don't have some of these skills, please view the links below - these are 
 ## Contribution Process
 The way to contribute to Ano.js is very simple:
 1. Create a web animation
-  - Make whatever you want, you're the boss!
+    - Make whatever you want, you're the boss!
 2. Optimize the animation
-  - View the [OPTIMIZATION.md](OPTIMIZATION.md) for more information on this
+    - View the [OPTIMIZATION.md](OPTIMIZATION.md) for more information on this
 3. Open a pull request
-  - We will take a look at your animation. We will assess the following
-    - Does the animation work?
-    - Is it optimized properly?
-    - Is it original?
+    - We will take a look at your animation. We will assess the following
+      - Does the animation work?
+      - Is it optimized properly?
+      - Is it original?
 4. Wait!
-  - If your pull request is accepted, your animation will be deployed directly (with your name on it) to the website and users can start using it!
-  - If your pull request is rejected, we will specifically tell you why so you can fix it and make another pull request.
+    - If your pull request is accepted, your animation will be deployed directly (with your name on it) to the website and users can start using it!
+    - If your pull request is rejected, we will specifically tell you why so you can fix it and make another pull request.
 
 ## Contribution Rules
 - Comment your code
