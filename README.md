@@ -42,6 +42,7 @@ All animations that you create give you recognition. The more contributions you 
     - Get help, announcements, and updates on Ano.js
     - Chat with fellow contributors 
 4. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
+5. Be sure to check out and follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
   
 
 ## Questions?
