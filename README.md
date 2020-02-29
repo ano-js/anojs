@@ -16,6 +16,7 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
   - More contributions = more recognition
   - Collaborators with the most amount of contributions are shown the most
   - You receive credit for animations you create
+  - Eligible for staff positions
   - You can see your profile on display at [anojs.com/our-team](https://anojs.com/our-team) if you're a contributor
 - Gain experience
   - Learn more about software engineering
@@ -23,8 +24,13 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
   
 <b> You can become a contributor today just by going to [anojs.com/join-us](https://anojs.com/join-us) and entering your GitHub username. </b>
   
+  
+## For Ano.js Contributors
+Thank you for joining Ano.js! You will not regret it. Here are the next steps:
+1. Head to [CONTRIBUTORS.md](CONTRIBUTORS.md) and read more on that file. It is filled with more information on how exactly to contribute to Ano.js
+2. Start contributing!
  
 
-This GitHub repository hosts all of our JS files for the animations that users use. Contributors can contribute by [using the optimization documentation](OPTIMIZATION.md) and making a pull request. This pull request can either be accepted and merged or rejected. If it is rejected we will tell you why.
+
 
 
