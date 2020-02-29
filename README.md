@@ -21,7 +21,7 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
   - Learn more about software engineering
   - Network with fellow collaborators
   
-* You can become a contributor today just by going to [https://anojs.com/join-us](anojs.com/join-us) and entering your GitHub username. *
+<b> You can become a contributor today just by going to [https://anojs.com/join-us](anojs.com/join-us) and entering your GitHub username. </b>
   
  
 
