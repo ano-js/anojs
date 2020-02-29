@@ -20,6 +20,10 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
 - Gain experience
   - Learn more about software engineering
   - Network with fellow collaborators
+  
+* You can become a contributor today just by going to [https://anojs.com/join-us](anojs.com/join-us) and entering your GitHub username. *
+  
+ 
 
 This GitHub repository hosts all of our JS files for the animations that users use. Contributors can contribute by [using the optimization documentation](OPTIMIZATION.md) and making a pull request. This pull request can either be accepted and merged or rejected. If it is rejected we will tell you why.
 
