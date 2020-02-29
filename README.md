@@ -1,15 +1,7 @@
-# Ano.js Animation Files
+# Ano.js Animations
 
-These files are the Javascript files used to create the animations seen on Ano.js. For more information, please visit the website at anojs.com.
+Ano.js is a free, open source web animation library that makes creating beautiful designs a whole lot easier. Ano.js is designed in the interest of simplifying the process of creating and integrating web animations into your website. All of our animations are powered by open source contributions. If you are not already a contributor, you can be one now at [http://anojs.com/join-us](anojs.com/join-us) and entering your GitHub username.
 
-## Educational Links
-If you don't know how to create a web animation or are confused about anything, you can take a look at these links based on what you're confused on
+This GitHub repository hosts all of our JS files for the animations that users use. Contributors can be 
 
-[Basic HTML/CSS/JS Crash Course (12 mins)](https://www.youtube.com/watch?v=O9Uauq-Gd0c) <br/>
-[Git/GitHub Crash Course for Absolute Beginners (30 mins)](https://www.youtube.com/watch?v=SWYqp7iY_Tc) <br/>
-[Complete HTML5 Canvas + Javascript Web Animation Course (4 hours)](https://www.youtube.com/playlist?list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL) <br/>
 
-## Contribution Rules
-- Comment your code
-- Make your code readable
-- Use the [Ano.js optimization techniques](OPTIMIZATION.md)
