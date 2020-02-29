@@ -4,7 +4,7 @@ Ano.js is a free, open source web animation library that makes creating beautifu
 
 ## Why should you be a contributor?
 - Paste it on your LinkedIn
--- Great work experience to show
+  - Great work experience to show
 Add to your portfolio/resume
 Show off Ano.js to future employers
 No time constraints or commitments
