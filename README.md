@@ -37,3 +37,8 @@ All animations that you create give you recognition. The more contributions you 
 2. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
 3. Check out [OPTIMIZATION.md](OPTIMIZATION.md). This will give you information on how to optimize your animations
   
+
+## Questions?
+If you have any questions, feel free to open an issue describing your problem or question. 
+
+Or, you can contact Calix Huang at calix.huang1@gmail.com
