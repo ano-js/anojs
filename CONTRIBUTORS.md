@@ -46,6 +46,10 @@ To learn any of the three technologies, the links have been put down below:
 - [Mo.js Crash Course (15 mins)](https://www.youtube.com/watch?v=yRxWa8lXasI)
 - [Anime.js Crash Course (10 mins](https://www.youtube.com/watch?v=uRDLFXxihgc)
 
+Documentation Links:
+- [Mo.js Documentation](https://mojs.github.io/tutorials/)
+- [Anime.js Documentation](https://animejs.com/documentation/)
+
 ## Contribution Process
 The way to contribute to Ano.js is very simple:
 1. Create a web animation
