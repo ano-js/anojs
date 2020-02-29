@@ -28,12 +28,12 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
 Ano.js contributors are in charge to creating web animations and optimizing it so the users can use it. It is a great way to improve your skills while also being a part of a strong team.
 
 ## Why should I contribute?
-All animations that you create give you recognition. The more contributions you make, the higher you will be ranked on the [Ano.js team page](http://anojs.com/our-team). Each animation you create will have your name next to it, and the more active you are the higher chance it is for you to be contacted for a staff position at Ano.js.
+All animations that you create give you recognition. The more contributions you make, the higher you will be ranked on the [Ano.js team page](https://anojs.com/our-team). Each animation you create will have your name next to it, and the more active you are the higher chance it is for you to be contacted for a staff position at Ano.js.
 
 <b> All of the work you do here is up to you. </b> There are absolutely no time or effort commitments being a contributor. You can do as much or as little as you want as a contributor. But, more active contributors get to reap the rewards of being active.
 
 ## How do I get started?
-1. [Become an Ano.js contributor](http://anojs.com/join-us)
+1. [Become an Ano.js contributor](https://anojs.com/join-us)
 2. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
 3. Check out [OPTIMIZATION.md](OPTIMIZATION.md). This will give you information on how to optimize your animations
   
