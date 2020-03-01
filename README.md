@@ -20,7 +20,7 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
   - More contributions = more recognition
   - Collaborators with the most amount of contributions are shown the most
   - You receive credit for animations you create
-  - Eligible for staff positions
+  - We keep track how many people use your animations
   - You can see your profile on display at [anojs.com/our-team](https://anojs.com/our-team) if you're a contributor
 - <b> Gain experience </b>
   - Learn more about software engineering
@@ -32,7 +32,7 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
 Ano.js contributors are in charge to creating web animations and deploying it for users to use. It is a great way to improve your skills while also being a part of a strong team.
 
 ## Why should I contribute?
-<b> All animations that you create give you recognition. </b> The more contributions you make, the higher you will be ranked on the [Ano.js team page](https://anojs.com/our-team). Each animation you create will have your name next to it, and the more active you are the higher chance it is for you to be contacted for a staff position at Ano.js.
+<b> All animations that you create give you recognition. </b> The more contributions you make, the higher you will be ranked on the [Ano.js team page](https://anojs.com/our-team). Each animation you create will have your name next to it, we track how many people use your animations, and the more active you are the higher chance it is for you to be contacted for a staff position at Ano.js.
 
 <b> All of the work you do here is up to you. </b> There are absolutely no time or effort commitments being a contributor. You can do as much or as little as you want as a contributor. But, more active contributors get to reap the rewards of being active.
 
