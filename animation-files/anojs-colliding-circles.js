@@ -4,11 +4,11 @@ collidingCirclesCanvasDiv.innerHTML += "<canvas id='anojs-colliding-circles-canv
 
 let canvas = document.querySelector("#anojs-colliding-circles-canvas")
 
-// let innerWidth = "100%";
-// let innerHeight = "100%";
+let innerWidth = collidingCirclesCanvasDiv.style.width;
+let innerHeight = collidingCirclesCanvasDiv.style.height;
 
-// canvas.width = innerWidth
-// canvas.height = innerHeight
+canvas.width = innerWidth
+canvas.height = innerHeight
 
 let c = canvas.getContext("2d")
 
