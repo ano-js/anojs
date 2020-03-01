@@ -8,17 +8,17 @@ Ano.js was designed to be simple. Our team develops and optimizes the animations
 ## Why should you be a contributor?
 - <b> Paste it on your LinkedIn </b>
   - Great work experience to show
-- Add to your portfolio/resume
+- <b> Add to your portfolio/resume </b>
   - Show off Ano.js to future employers
 - <b> No time constraints or commitments </b>
   - You choose how much you contribute
-- Receive recognition
+- <b> Receive recognition </b>
   - More contributions = more recognition
   - Collaborators with the most amount of contributions are shown the most
   - You receive credit for animations you create
   - Eligible for staff positions
   - You can see your profile on display at [anojs.com/our-team](https://anojs.com/our-team) if you're a contributor
-- Gain experience
+- <b> Gain experience </b>
   - Learn more about software engineering
   - Network with fellow collaborators
   
@@ -35,16 +35,16 @@ Ano.js contributors are in charge to creating web animations and deploying it fo
 <b> We try to make your job as easy as possible. </b> There are a lot of rules to follow when optimizing animations for open use. Instead of you doing it, we've taken the responsibility of optimizing your animations for you. You worry about making the animations, and we'll take care of the rest.
 
 ## How do I get started?
-1. [Become an Ano.js contributor](https://anojs.com/join-us)
-2. Be sure to star and watch this repository
+1. <b> [Become an Ano.js contributor](https://anojs.com/join-us) </b>
+2. <b> Be sure to star and watch this repository </b>
     - Will provide updates
 3. <b> [Join the Slack Channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU)  </b>
     - Make sure to get Slack on desktop and mobile
       - Turn on notifications
     - Get help, announcements, and updates on Ano.js
     - Chat with fellow contributors 
-4. Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing
-5. Make your first contribution!
+4. <b> Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing </b>
+5. <b> Make your first contribution! </b>
     - Simply make a pull request titled "First Contribution" and we will accept it!
   
 
