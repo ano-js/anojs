@@ -4,13 +4,13 @@
 
 Thank you so much for being a part of the Ano.js team! This is a great way to get involved with the community, as well as improving your software engineering skills and your professional career. Below is more information on what your job is, what you will be doing, and how you will do it.
 
-General announcements will be an issue that is open to everyone. Important announcements will be announced by email blast.
+Make sure you [join our Slack channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU) to stay updated on Ano.js and get help with whatever you need!
 
 <b> If you are not already a contributor, become one at [anojs.com/join-us](https://anojs.com/join-us)! </b>
 
 
 ## What do contributors do?
-Ano.js contributors will create web animations themselves and optimize them so users can use them. These animations, if accepted, will be deployed to our main website anojs.com and be open for users to freely use them!
+Ano.js contributors will create web animations themselves and deploy them so users can use them. These animations, if accepted, will be deployed to our main website anojs.com and be open for users to freely use them!
 
 
 ## Assessing your skill level
@@ -56,9 +56,7 @@ Documentation Links:
 The way to contribute to Ano.js is very simple:
 1. Create a web animation
     - Make whatever you want, you're the boss!
-2. Optimize the animation
-    - View the [OPTIMIZATION.md](OPTIMIZATION.md) for more information on this
-3. Open a pull request
+2. Open a pull request
     - We will take a look at your animation. We will assess the following
       - Does the animation work?
       - Is it optimized properly?
@@ -71,7 +69,6 @@ The way to contribute to Ano.js is very simple:
 ## Contribution Rules
 - Comment your code
 - Make your code readable
-- Use the [Ano.js optimization techniques](OPTIMIZATION.md)
 - Follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 
