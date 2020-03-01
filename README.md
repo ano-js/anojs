@@ -1,6 +1,6 @@
 # Ano.js Animations
 
-Visit our website at [anojs.com](https://anojs.com)!
+<b> Visit our website at [anojs.com](https://anojs.com)! </b>
 
 Ano.js is a free, open source web animation library that makes creating beautiful designs a whole lot easier. Ano.js is designed in the interest of simplifying the process of creating and integrating web animations into your website. All of our animations are powered by open source contributions. If you are not already a contributor, you can be one now at [anojs.com/join-us](https://anojs.com/join-us) and entering your GitHub username.
 
