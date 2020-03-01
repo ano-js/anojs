@@ -72,6 +72,7 @@ The way to contribute to Ano.js is very simple:
 - Comment your code
 - Make your code readable
 - Use the [Ano.js optimization techniques](OPTIMIZATION.md)
+- Follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 
 ## Questions?
