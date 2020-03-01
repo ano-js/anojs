@@ -6,11 +6,11 @@ Ano.js is a free, open source web animation library that makes creating beautifu
 Ano.js was designed to be simple. Our team develops and optimizes the animations, so the user can use it in their website just by copy-pasting two lines of code! Instead of Anime.js and Mo.js where you have to code and create the animation yourself, we just did it for you!
 
 ## Why should you be a contributor?
-- Paste it on your LinkedIn
+- <b> Paste it on your LinkedIn </b>
   - Great work experience to show
 - Add to your portfolio/resume
   - Show off Ano.js to future employers
-- No time constraints or commitments
+- <b> No time constraints or commitments </b>
   - You choose how much you contribute
 - Receive recognition
   - More contributions = more recognition
@@ -38,7 +38,7 @@ Ano.js contributors are in charge to creating web animations and deploying it fo
 1. [Become an Ano.js contributor](https://anojs.com/join-us)
 2. Be sure to star and watch this repository
     - Will provide updates
-3. [Join the Slack Channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU)
+3. <b> [Join the Slack Channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU)  </b>
     - Make sure to get Slack on desktop and mobile
       - Turn on notifications
     - Get help, announcements, and updates on Ano.js
