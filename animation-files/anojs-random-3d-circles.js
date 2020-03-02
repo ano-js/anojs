@@ -4,11 +4,11 @@ canvasDiv.innerHTML += "<canvas id='anojs-random-3d-circles-canvas'></canvas>"
 
 let canvas = document.querySelector("#anojs-random-3d-circles-canvas")
 
-let innerWidth = window.innerWidth
-let innerHeight = window.innerHeight
+canvas.style.width ='100%';
+canvas.style.height='100%';
 
-canvas.width = innerWidth
-canvas.height = innerHeight
+canvas.width  = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext("2d")
 

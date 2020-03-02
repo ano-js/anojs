@@ -4,15 +4,15 @@ canvasDiv.innerHTML += "<canvas id='anojs-sine-waves-canvas'></canvas>"
 
 let canvas = document.querySelector("#anojs-sine-waves-canvas")
 
-let innerWidth = window.innerWidth
-let innerHeight = window.innerHeight
+canvas.style.width ='100%';
+canvas.style.height='100%';
 
-canvas.width = innerWidth
-canvas.height = innerHeight
+canvas.width  = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext("2d")
 
-// Event Listeners  
+// Event Listeners
 addEventListener("resize", () => {
   innerWidth = window.innerWidth
   innerHeight = window.innerHeight

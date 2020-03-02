@@ -4,8 +4,11 @@ canvasDiv.innerHTML += "<canvas id='anojs-growing-circles-gray-canvas'></canvas>
 
 let canvas = document.querySelector("#anojs-growing-circles-gray-canvas")
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.style.width ='100%';
+canvas.style.height='100%';
+
+canvas.width  = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
 
 var c = canvas.getContext("2d");
 

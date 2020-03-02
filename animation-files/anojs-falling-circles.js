@@ -6,11 +6,11 @@ let canvas = document.querySelector("#anojs-falling-circles-canvas")
 
 const c = canvas.getContext('2d')
 
-var innerWidth = window.innerWidth;
-var innerHeight = window.innerHeight;
+canvas.style.width ='100%';
+canvas.style.height='100%';
 
-canvas.width = innerWidth
-canvas.height = innerHeight
+canvas.width  = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
 
 const mouse = {
   x: undefined,
