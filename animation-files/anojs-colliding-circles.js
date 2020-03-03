@@ -1,6 +1,6 @@
-let collidingCirclesCanvasDiv = document.querySelector("#anojs-colliding-circles")
+let canvasDiv = document.querySelector("#anojs-colliding-circles")
 
-collidingCirclesCanvasDiv.innerHTML += "<canvas id='anojs-colliding-circles-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-colliding-circles-canvas'></canvas>"
 
 let canvas = document.querySelector("#anojs-colliding-circles-canvas")
 
@@ -10,7 +10,7 @@ canvas.style.height='100%';
 canvas.width  = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
-let c = canvas.getContext("2d")
+var c = canvas.getContext("2d");
 
 let strokeColorArray = [
   "#a24f76",
