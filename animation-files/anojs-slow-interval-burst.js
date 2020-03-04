@@ -55,4 +55,4 @@ const parentContainer = $("#anojs-slow-interval-burst");
 randomBurst();
 setInterval(function() {
   randomBurst();
-}, 500);
+}, 2000);
