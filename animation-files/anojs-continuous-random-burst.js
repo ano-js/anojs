@@ -57,4 +57,10 @@ const parentContainer = $("#anojs-continuous-random-burst");
 randomBurst();
 setInterval(function() {
   randomBurst();
+
+  setTimeout(function() {
+    for (mojsShape of document.querySelectorAll("[data-name=mojs-shape]")) {
+      mojsShape.remove();
+    }
+  }, 2500);
 }, 3000);
