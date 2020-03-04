@@ -1,10 +1,5 @@
 // calixo888
 
-// Importing Mo.js
-var script = document.createElement("script");  // create a script DOM node
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.min.js";  // set its src to the provided URL
-document.body.insertBefore(script, document.body.firstChild);
-
 
 const burst = new mojs.Burst({
   radius: { 0: 100 },
