@@ -52,7 +52,7 @@ const circleConstructor = {
   opacity: {1:0},
 };
 
-const parentContainer = $("#anojs-random-burst");
+const parentContainer = $("#anojs-continuous-random-burst");
 
 randomBurst();
 setInterval(function() {
