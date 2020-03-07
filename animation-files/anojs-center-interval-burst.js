@@ -79,7 +79,7 @@ const burst5Constructor = {
   count: 16,
   children: {
     shape: "polygon",
-    fill: "#227bd4",
+    fill: "#227bd2",
     opacity: { 1: 0 },
     angle: { 0: 720 },
     radius: { 20: 10 },
