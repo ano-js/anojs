@@ -1,12 +1,17 @@
-/*
+// jabo-bernardo
 
-    Random Popping Circles
-    Web Animation
-    Developed by Code Jabp
+let canvasDiv = document.querySelector("#anojs-random-popping-circles")
 
-*/
+canvasDiv.innerHTML += "<canvas id='anojs-random-popping-circles-canvas'></canvas>"
 
-let canvas = document.getElementById('view_container');
+let canvas = document.querySelector("#anojs-random-popping-circles-canvas")
+
+canvas.style.width ='100%';
+canvas.style.height='100%';
+
+canvas.width  = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
+
 let c = canvas.getContext('2d');
 
 let randomColor = ['#757938', '#bc9b64', '#9db81c'];
