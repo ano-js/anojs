@@ -1,10 +1,10 @@
 // jabo-bernardo
 
-let canvasDiv = document.querySelector("#anojs-random-popping-square")
+let canvasDiv = document.querySelector("#anojs-random-moving-square")
 
-canvasDiv.innerHTML += "<canvas id='anojs-random-popping-square-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-random-moving-square-canvas'></canvas>"
 
-let canvas = document.querySelector("#anojs-random-popping-square-canvas")
+let canvas = document.querySelector("#anojs-random-moving-square-canvas")
 
 canvas.style.width ='100%';
 canvas.style.height='100%';
@@ -56,7 +56,7 @@ let Initialize = () => {
     for(let i = 0; i < 500; i++) {
         squares.push(new Square(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 16));
     }
-    
+
 }
 
 let animation = setInterval(() => {
