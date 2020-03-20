@@ -24,13 +24,13 @@ class Circle {
         this.dir = true;
         this.color = randomColor[Math.round(Math.random() * randomColor.length)];
     }
-    render() {
+    Render() {
         c.fillStyle = this.color;
         c.beginPath();
         c.arc(this.x, this.y, this.rad, 0, 2 * Math.PI);
         c.fill();
     }
-    update() {
+    Update() {
         if(this.rad <= 1) {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
@@ -47,18 +47,22 @@ class Circle {
     }
 }
 
-var abc = [];
+var circles = [];
 
-for(let i = 0; i < 100; i++) {
-    abc.push(new Circle(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 16));
+let Initialize = () => {
+
+    for(let i = 0; i < 100; i++) {
+        circles.push(new Circle(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 16));
+    }
+    
 }
 
-let loop = setInterval(() => {
+let animation = setInterval(() => {
     c.clearRect(0, 0, canvas.width, canvas.height)
-        for (let i = 0; i < abc.length; i++) {
-            abc[i].render();
-            abc[i].update();
+        for (let i = 0; i < circles.length; i++) {
+            circles[i].Update();
+            circles[i].Render();
         }
 }, 1000/60)
 
-update()
+Initialize();
