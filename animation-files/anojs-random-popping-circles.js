@@ -64,3 +64,5 @@ let animation = setInterval(() => {
             circles[i].Render();
         }
 }, 1000/60)
+
+Initialize();
