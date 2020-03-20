@@ -59,7 +59,7 @@ let Initialize = () => {
 
 let animation = setInterval(() => {
     c.clearRect(0, 0, canvas.width, canvas.height)
-        for (let i = 0; i < abc.length; i++) {
+        for (let i = 0; i < circles.length; i++) {
             circles[i].Update();
             circles[i].Render();
         }
