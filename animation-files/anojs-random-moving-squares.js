@@ -1,10 +1,10 @@
 // jabo-bernardo
 
-let canvasDiv = document.querySelector("#anojs-random-moving-square")
+let canvasDiv = document.querySelector("#anojs-random-moving-squares")
 
-canvasDiv.innerHTML += "<canvas id='anojs-random-moving-square-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-random-moving-squares-canvas'></canvas>"
 
-let canvas = document.querySelector("#anojs-random-moving-square-canvas")
+let canvas = document.querySelector("#anojs-random-moving-squares-canvas")
 
 canvas.style.width ='100%';
 canvas.style.height='100%';
