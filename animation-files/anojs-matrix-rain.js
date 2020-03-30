@@ -1,6 +1,6 @@
 // vplentinax
 
-let canvasDiv = document.querySelector('.anojs-matrix-rain');
+let canvasDiv = document.querySelector('#anojs-matrix-rain');
 
 canvasDiv.innerHTML += "<canvas id='anojs-matrix-rain-canvas'></canvas>";
 
