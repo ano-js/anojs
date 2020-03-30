@@ -1,10 +1,10 @@
 //-> Author: vplentinax
 
-let canvasDiv = document.getElementById('matrix-rain-animation');
+let canvasDiv = document.getElementById('anojs-matrix-rain-canvas');
 
-canvasDiv.innerHTML += "<canvas id='matrix-rain-animation-canvas'></canvas>";
+canvasDiv.innerHTML += "<canvas id='anojs-matrix-rain-canvas'></canvas>";
 
-let canvas = document.getElementById('matrix-rain-animation-canvas');
+let canvas = document.getElementById('anojs-matrix-rain-canvas');
 let context = canvas.getContext('2d');
 
 canvas.height = window.innerHeight;
