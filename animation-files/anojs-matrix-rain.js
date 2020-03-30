@@ -1,6 +1,6 @@
 //-> Author: vplentinax
 
-let canvasDiv = document.getElementById('anojs-matrix-rain-canvas');
+let canvasDiv = document.getElementById('anojs-matrix-rain');
 
 canvasDiv.innerHTML += "<canvas id='anojs-matrix-rain-canvas'></canvas>";
 
