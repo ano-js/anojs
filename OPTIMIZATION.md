@@ -3,7 +3,9 @@ In order to properly contribute animations to Ano.js, you must be able to optimi
 
 ## General optimization rules
 1. The animation JS file must be placed in the `/animation-files/` directory
-2. The filename of the JS file must follow `anojs-[rest of animation name separated by dashes].js`; Example: `anojs-falling-circles.js`
+2. The filename of the JS file must follow this format:<br/>
+    `anojs-[rest of animation name separated by dashes].js`<br/>
+    Example: `anojs-falling-circles.js`
 3. It is most convenient if you could take a full-page screenshot of your animation in the works, and place it in the `/animation-images/` directory. The filename of this file must be the same as the JS file but with a `.png` extension; Example: `anojs-falling-circles.png`
 
 ## HTML5 Canvas optimization rules
