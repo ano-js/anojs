@@ -1,4 +1,5 @@
-//-> Author: vplentinax
+// vplentinax
+
 
 let canvasDiv = document.getElementById('anojs-matrix-rain');
 
