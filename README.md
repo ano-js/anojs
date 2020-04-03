@@ -7,7 +7,7 @@ Ano.js is a free, open source web animation library that makes creating beautifu
 <b> Become an open source contributor now at [anojs.com/join-us](https://anojs.com/join-us) and entering your GitHub username. </b>
 
 ## Why use Ano.js?
-Ano.js was designed to be simple. Our team develops and optimizes the animations, so the user can use it in their website just by copy-pasting two lines of code! Instead of Anime.js and Mo.js where you have to code and create the animation yourself, we just did it for you!
+Ano.js was designed to be simple. Our team develops and formats the animations, so the user can use it in their website just by copy-pasting two lines of code! Instead of Anime.js and Mo.js where you have to code and create the animation yourself, we just did it for you!
 
 ## Why should you be a contributor?
 - <b> Paste it on your LinkedIn </b>
@@ -36,7 +36,7 @@ Ano.js contributors are in charge to creating web animations and deploying it fo
 
 <b> All of the work you do here is up to you. </b> There are absolutely no time or effort commitments being a contributor. You can do as much or as little as you want as a contributor. But, more active contributors get to reap the rewards of being active.
 
-<b> We try to make your job as easy as possible. </b> There are a lot of rules to follow when optimizing animations for open use. Instead of you doing it, we've taken the responsibility of optimizing your animations for you. You worry about making the animations, and we'll take care of the rest.
+<b> We try to make your job as easy as possible. </b> There are a lot of rules to follow when formatting animations for open use. Instead of you doing it, we've taken the responsibility of formatting your animations for you. You worry about making the animations, and we'll take care of the rest.
 
 ## How do I get started?
 1. <b> [Become an Ano.js contributor](https://anojs.com/join-us) </b>
