@@ -1,33 +1,33 @@
 // calixo888
 
-let canvasDiv = document.querySelector("#anojs-growing-circles")
+let canvasDiv = document.querySelector("#anojs-growing-circles");
 
-canvasDiv.innerHTML += "<canvas id='anojs-growing-circles-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-growing-circles-canvas'></canvas>";
 
-let canvas = document.querySelector("#anojs-growing-circles-canvas")
+let canvas = document.querySelector("#anojs-growing-circles-canvas");
 
-canvas.style.width ='100%';
-canvas.style.height='100%';
+canvas.style.width = '100%';
+canvas.style.height = '100%';
 
-canvas.width  = canvas.offsetWidth;
+canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
 var c = canvas.getContext("2d");
 
 var mouse = {
-  x: undefined,
-  y: undefined
-}
+    x: undefined,
+    y: undefined
+};
 
 window.addEventListener("mousemove", (event) => {
-  mouse.x = event.x;
-  mouse.y = event.y;
-})
+    mouse.x = event.x;
+    mouse.y = event.y;
+});
 
 addEventListener("resize", () => {
-  innerWidth = window.innerWidth
-  innerHeight = window.innerHeight
-})
+    innerWidth = window.innerWidth;
+    innerHeight = window.innerHeight;
+});
 
 var x = 700;
 var y = 300;
@@ -36,43 +36,42 @@ var dy = 10;
 var radius = 30;
 
 function Circle(x, y, dx, dy, radius, color) {
-  this.x = x;
-  this.y = y;
-  this.dx = dx;
-  this.dy = dy;
-  this.radius = radius;
-  this.origRadius = radius;
-  this.color = color;
+    this.x = x;
+    this.y = y;
+    this.dx = dx;
+    this.dy = dy;
+    this.radius = radius;
+    this.origRadius = radius;
+    this.color = color;
 
-  this.draw = function() {
-    c.fillStyle = this.color;
-    c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
-    c.fill();
-  }
-
-  this.update = function() {
-    if (this.x + this.radius > window.innerWidth || this.x - this.radius < 0) {
-      this.dx = -this.dx;
+    this.draw = function() {
+        c.fillStyle = this.color;
+        c.beginPath();
+        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+        c.fill();
     }
 
-    if (this.y + this.radius > window.innerHeight || this.y - this.radius < 0) {
-      this.dy = -this.dy;
-    }
+    this.update = function() {
+        if (this.x + this.radius > window.innerWidth || this.x - this.radius < 0) {
+            this.dx = -this.dx;
+        }
 
-    this.x += this.dx;
-    this.y += this.dy;
+        if (this.y + this.radius > window.innerHeight || this.y - this.radius < 0) {
+            this.dy = -this.dy;
+        }
 
-    // Interactivity
-    if (mouse.x - this.x < 100 && mouse.x - this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100 && this.radius < 50) {
-      this.radius += 2;
-    }
-    else if (this.radius > this.origRadius) {
-      this.radius -= 2;
-    }
+        this.x += this.dx;
+        this.y += this.dy;
 
-    this.draw();
-  }
+        // Interactivity
+        if (mouse.x - this.x < 100 && mouse.x - this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100 && this.radius < 50) {
+            this.radius += 2;
+        } else if (this.radius > this.origRadius) {
+            this.radius -= 2;
+        }
+
+        this.draw();
+    }
 }
 
 var circle = new Circle(x, y, dx, dy, radius);
@@ -82,23 +81,23 @@ var colorArray = ["rgb(212, 170, 76)", "rgb(116, 187, 245)", "rgb(242, 108, 99)"
 var circles = [];
 
 for (var i = 0; i < 500; i++) {
-  var x = Math.random() * window.innerWidth + radius;
-  var y = Math.random() * window.innerHeight + radius;
-  var dx = (Math.random() - 0.5) * 3;
-  var dy = (Math.random() - 0.5) * 3;
-  var radius = (Math.random() * 5) + 5;
-  var color = colorArray[Math.floor(Math.random() * colorArray.length)];
+    var x = Math.random() * window.innerWidth + radius;
+    var y = Math.random() * window.innerHeight + radius;
+    var dx = (Math.random() - 0.5) * 3;
+    var dy = (Math.random() - 0.5) * 3;
+    var radius = (Math.random() * 5) + 5;
+    var color = colorArray[Math.floor(Math.random() * colorArray.length)];
 
-  circles.push(new Circle(x, y, dx, dy, radius, color));
+    circles.push(new Circle(x, y, dx, dy, radius, color));
 }
 
 function animate() {
-  requestAnimationFrame(animate);
-  c.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-  for (circle of circles) {
-    circle.update();
-  }
+    for (circle of circles) {
+        circle.update();
+    }
 }
 
 animate();
