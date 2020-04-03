@@ -16,7 +16,7 @@ Ano.js contributors will create web animations themselves and deploy them so use
 ## Assessing your skill level
 You don't need to know how to code to be a contributor. But, in order to contribute properly, you should learn some basic skills. Here are the skills you will need to be able to contribute a huge amount to Ano.js:
 - Basic HTML/CSS
-- Good grasp of Javascript 
+- Good grasp of Javascript - this repo is written in plain javascript
 - Basic Git/GitHub skills
   - Pushing/pulling from a repository
   - Making pull requests
