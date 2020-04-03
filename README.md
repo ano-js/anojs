@@ -42,8 +42,8 @@ Ano.js contributors are in charge to creating web animations and deploying it fo
 1. <b> [Become an Ano.js contributor](https://anojs.com/join-us) </b>
 2. <b> Be sure to star and watch this repository </b>
     - Will provide updates
-3. <b> [Join the Slack Channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU)  </b>
-    - Make sure to get Slack on desktop and mobile
+3. <b> [Join our Discord Server!](https://discord.gg/xkdRm7E)  </b>
+    - Make sure to get Discord on desktop and mobile
       - Turn on notifications
     - Get help, announcements, and updates on Ano.js
     - Chat with fellow contributors 
@@ -53,6 +53,6 @@ Ano.js contributors are in charge to creating web animations and deploying it fo
   
 
 ## Questions?
-If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question, or you can send a message in our [Slack channel](https://join.slack.com/t/anojs-project/shared_invite/zt-d99cjldx-7tX76s2mfcAWkNh~Uryj9w).
+If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question, or you can send a message in our [Discord channel](https://discord.gg/xkdRm7E).
 
 You can also directly contact Calix Huang at calix.huang1@gmail.com
