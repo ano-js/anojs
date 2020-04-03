@@ -24,5 +24,6 @@ If your animation is built with HTML5 Canvas, you must also follow these rules:
 ## Codestyle formatting rules
 1. All code should be written in camelCase style.
 2. Curly braces on same line as statement.
+3. End every statement in semicolons. 
 
 **Again, thank you for contributing animations, and don't hestiate to reach out on Slack for help on formatting your animations!**
