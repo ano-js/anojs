@@ -18,16 +18,18 @@ var animation; // stores the animeJS instance
 
 // Pauses and resets the animation
 function stopAnimation() {
-    if (!animation) return;
+    if (!animation)
+        return;
     animation.pause();
-    animation.reset()
+    animation.reset();
     canvasDiv.style.opacity = '0';
 }
 
 // Starts the loading animation and pauses it after a specified time
 // @param time the time to load for, in milliseconds
 function startLoadingWithTimer(time) {
-    if (Number.isNaN(time)) return new Error("Please specify a valid time in milliseconds.")
+    if (Number.isNaN(time))
+        return new Error("Please specify a valid time in milliseconds.")
 
     startLoading();
     setTimeout(stopAnimation, parseInt(time, 10));
@@ -42,7 +44,7 @@ function startLoading() {
             { value: -25, duration: 150, easing: 'easeOutSine' },
             { value: 0, duration: 200, easing: 'easeInSine' }
         ],
-        delay: function (el, i, l) {
+        delay: function(el, i, l) {
             return (i + 1) * 150 + 300
         },
         loop: true
@@ -62,7 +64,7 @@ function init() {
         div.style['border-radius'] = '50%';
         div.style.display = 'inline-block';
 
-        canvasDiv.appendChild(div)
+        canvasDiv.appendChild(div);
     }
 }
 
