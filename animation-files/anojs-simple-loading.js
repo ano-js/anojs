@@ -1,20 +1,9 @@
-/*
-Script tag:
+// g10ria
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"
-        integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
-*/
-
-/**
- * Usage:
- * Call startLoading() to start the animation
- * Call startLoadingWithTimer(time) to start the animation and stop it automatically after time milliseconds
- * Call stopAnimation() to stop the animation
- */
 const NUM_DOTS = 3;
 const DOTS_COLOR = 'rgb(85, 162, 165)';
 
-const canvasDiv = document.querySelector("#anojs-simpleloading-1");
+const canvasDiv = document.querySelector("#anojs-simple-loading");
 canvasDiv.style.position = 'fixed'; // Not sure if there's a cleaner way to add these styles
 canvasDiv.style.height = '100vh';
 canvasDiv.style.width = '100vw';
