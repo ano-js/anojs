@@ -4,7 +4,7 @@
 
 Thank you so much for being a part of the Ano.js team! This is a great way to get involved with the community, as well as improving your software engineering skills and your professional career. Below is more information on what your job is, what you will be doing, and how you will do it.
 
-Make sure you [join our discord channel](https://discord.gg/erjPPV8) to stay updated on Ano.js and get help with whatever you need!
+Make sure you [join our discord channel](https://discord.gg/xkdRm7E) to stay updated on Ano.js and get help with whatever you need!
 
 <b> If you are not already a contributor, become one at [anojs.com/join-us](https://anojs.com/join-us)! </b>
 
