@@ -1,9 +1,4 @@
-/*
-
-    Line Warp
-    Developed by Code Jabo
-
-*/
+// jabo-bernardo
 
 let canvasDiv = document.querySelector("#anojs-flame-lines");
 
@@ -16,6 +11,8 @@ canvas.style.height = '100%';
 
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
+
+let c = canvas.getContext("2d");
 
 class Line {
     constructor() {
@@ -66,10 +63,10 @@ let Initialize = function() {
 let animation = setInterval(() => {
     c.clearRect(0, 0, canvas.width, canvas.height)
     for(var i = 0; i < lines.length; i++) {
-        lines[i].Render();  
+        lines[i].Render();
         lines[i].Update();
     }
-        
+
 
 }, 1000/60)
 
