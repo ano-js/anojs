@@ -5,12 +5,16 @@
 
 */
 
-let canvas = document.querySelector('canvas');
-let c = canvas.getContext('2d');
+let canvasDiv = document.querySelector("#anojs-flame-lines");
 
-canvas.style.width = '100%'
-canvas.style.height = '100%'
-canvas.width  = canvas.offsetWidth;
+canvasDiv.innerHTML += "<canvas id='anojs-flame-lines-canvas'></canvas>";
+
+let canvas = document.querySelector("#anojs-flame-lines-canvas");
+
+canvas.style.width = '100%';
+canvas.style.height = '100%';
+
+canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
 class Line {
