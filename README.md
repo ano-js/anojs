@@ -20,7 +20,7 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
   - More contributions = more recognition
   - Collaborators with the most amount of contributions are shown the most
   - You receive credit for animations you create
-  - We keep track how many people use your animations
+  - We keep track of how many people use your animations
   - You can see your profile on display at [anojs.com/our-team](https://anojs.com/our-team) if you're a contributor
 - <b> Gain experience </b>
   - Learn more about software engineering
