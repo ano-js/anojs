@@ -77,3 +77,7 @@ The way to contribute to Ano.js is very simple:
 If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question, or you can send a message in our [discord](https://discord.gg/erjPPV8).
 
 You can also directly contact Calix Huang at calix.huang1@gmail.com
+
+
+
+
