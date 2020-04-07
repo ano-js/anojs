@@ -1,6 +1,8 @@
-let canvasDiv = document.querySelector("#anojs-mouse-trail");
-canvasDiv.innerHTML += "<canvas id='anojs-mouse-trail-canvas'></canvas>";
-let canvas = document.querySelector("#anojs-mouse-trail-canvas");
+// jabo-bernardo
+
+let canvasDiv = document.querySelector("#anojs-colorful-samurai");
+canvasDiv.innerHTML += "<canvas id='anojs-colorful-samurai-canvas'></canvas>";
+let canvas = document.querySelector("#anojs-colorful-samurai-canvas");
 
 canvas.style.width = '100%';
 canvas.style.height = '100%';
