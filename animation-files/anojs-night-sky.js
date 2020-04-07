@@ -1,3 +1,5 @@
+// jabo-bernardo
+
 let canvasDiv = document.querySelector("#anojs-night-sky");
 canvasDiv.innerHTML += "<canvas id='anojs-night-sky-canvas'></canvas>";
 let canvas = document.querySelector("#anojs-night-sky-canvas");
