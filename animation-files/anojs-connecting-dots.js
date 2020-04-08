@@ -64,7 +64,7 @@ class Dot {
     FindNearest() {
         for(var i = 0; i < dots_count; i++) {
             if(dots[i].id != this.id) {
-                if(Vector2.Distance(this.v, dots[i].v) < canvas.width/8) {
+                if(Vector2.Distance(this.v, dots[i].v) < canvas.width/10) {
                     c.beginPath();
                     c.moveTo(this.x, this.y)
                     c.lineTo(dots[i].x, dots[i].y)
