@@ -1,10 +1,10 @@
 // calixo888
 
-let canvasDiv = document.querySelector("#anojs-growing-circles-gray");
+let canvasDiv = document.querySelector("#anojs-custom-growing-circles");
 
-canvasDiv.innerHTML += "<canvas id='anojs-growing-circles-gray-canvas'></canvas>";
+canvasDiv.innerHTML += "<canvas id='anojs-custom-growing-circles-canvas'></canvas>";
 
-let canvas = document.querySelector("#anojs-growing-circles-gray-canvas");
+let canvas = document.querySelector("#anojs-custom-growing-circles-canvas");
 
 canvas.style.width = '100%';
 canvas.style.height = '100%';
