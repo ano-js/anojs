@@ -27,11 +27,11 @@ class Line {
         this.vel = Math.random() * 5;
         this.color = 'black';
         if(this.h <= 12)
-            this.color = '#eb5334';
+            this.color = 'ANOJS_COLOR_1';
         else if(this.h > 12 && this.h < 16)
-            this.color = '#eb9534';
+            this.color = 'ANOJS_COLOR_2';
         else if(this.h > 16)
-            this.color = 'dbc81a';
+            this.color = 'ANOJS_COLOR_3';
     }
 
     Update() {

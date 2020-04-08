@@ -19,7 +19,7 @@ const mouse = {
     y: undefined
 };
 
-const colors = ['#2185C5', '#7ECEFD', '#FFF6E5', '#FF7F66'];
+const colors = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3', 'ANOJS_COLOR_4'];
 
 // Event Listeners
 addEventListener('mousedown', (event) => {
@@ -61,7 +61,7 @@ class Ball {
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         c.fillStyle = this.color;
-        c.strokeStyle = "black";
+        c.strokeStyle = "ANOJS_COLOR_5";
         c.stroke();
         c.fill();
     }

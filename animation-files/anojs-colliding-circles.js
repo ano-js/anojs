@@ -15,17 +15,17 @@ canvas.height = canvas.offsetHeight;
 var c = canvas.getContext("2d");
 
 let strokeColorArray = [
-    "#a24f76",
-    "#5ddb38",
-    "#9caaf2",
-    "#e34047"
+    "ANOJS_COLOR_1",
+    "ANOJS_COLOR_2",
+    "ANOJS_COLOR_3",
+    "ANOJS_COLOR_4"
 ];
 
 let fillColorArray = [
-    "rgba(162, 79, 118, 0.75)",
-    "rgba(93, 219, 56, 0.75)",
-    "rgba(156, 170, 242, 0.75)",
-    "rgba(227, 64, 71, 0.75)"
+    "ANOJS_COLOR_5",
+    "ANOJS_COLOR_6",
+    "ANOJS_COLOR_7",
+    "ANOJS_COLOR_8"
 ];
 
 let mouse = {

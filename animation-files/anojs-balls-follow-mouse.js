@@ -27,16 +27,16 @@ window.addEventListener('resize', function() {
 });
 
 let arrColor = [
-  '#ACE4AA',
-  '#C3DFE0',
-  '#EFC7C2',
-  '#ACE4AA',
-  '#C3DFE0',
-  '#EFC7C2',
-  '#ACE4AA',
-  '#C3DFE0',
-  '#ACE4AA',
-  '#EFC7C2'
+  'ANOJS_COLOR_1',
+  'ANOJS_COLOR_2',
+  'ANOJS_COLOR_3',
+  'ANOJS_COLOR_4',
+  'ANOJS_COLOR_5',
+  'ANOJS_COLOR_6',
+  'ANOJS_COLOR_7',
+  'ANOJS_COLOR_8',
+  'ANOJS_COLOR_9',
+  'ANOJS_COLOR_10'
 ];
 
 let arrCircle = [];
@@ -99,7 +99,7 @@ function animate() {
   requestAnimationFrame(animate);
   context.clearRect(0, 0, innerWidth, innerHeight);
   context.fillRect(0, 0, innerWidth, innerHeight);
-  context.fillStyle = 'rgb(34, 34, 34)';
+  context.fillStyle = 'ANOJS_COLOR_11';
 
   for (var i = 0; i < arrCircle.length; i++) {
     arrCircle[i].update();

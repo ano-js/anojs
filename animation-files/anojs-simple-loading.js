@@ -1,7 +1,7 @@
 // g10ria
 
 const NUM_DOTS = 3;
-const DOTS_COLOR = 'rgb(85, 162, 165)';
+const DOTS_COLOR = 'ANOJS_COLOR_1';
 
 const canvasDiv = document.querySelector("#anojs-simple-loading");
 canvasDiv.style.position = 'fixed'; // Not sure if there's a cleaner way to add these styles
@@ -10,7 +10,7 @@ canvasDiv.style.width = '100vw';
 canvasDiv.style.display = 'flex';
 canvasDiv.style.justifyContent = 'center';
 canvasDiv.style.alignItems = 'center';
-canvasDiv.style.backgroundColor = 'rgba(255, 255, 255, 0.25)';
+canvasDiv.style.backgroundColor = 'ANOJS_COLOR_2';
 canvasDiv.style.transition = 'opacity .2s';
 canvasDiv.style.opacity = '0';
 
