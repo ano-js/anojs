@@ -33,7 +33,7 @@ var dx = ANOJS_SPEED;
 var dy = ANOJS_SPEED;
 
 // Colors
-var colorArray = [ANOJS_COLOR_1, ANOJS_COLOR_2, ANOJS_COLOR_3];
+var colorArray = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3"];
 
 function Circle(x, y, dx, dy, radius, color) {
     this.x = x;
