@@ -29,7 +29,7 @@ var y = 300;
 var radius = 30;
 
 // Colors
-var colorArray = ["ANOJS_COLOR", "ANOJS_COLOR", "ANOJS_COLOR"];
+var colorArray = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3"];
 
 function Circle(x, y, dx, dy, radius, color) {
     this.x = x;
@@ -79,9 +79,9 @@ for (var i = 0; i < 400; i++) {
     var y = Math.random() * window.innerHeight + radius;
 
     // Speed
-    var dx = ANOJS_SPEED;
-    var dy = ANOJS_SPEED;
-    
+    var dx = ANOJS_SPEED_1;
+    var dy = ANOJS_SPEED_2;
+
     var radius = (Math.random() * 5) + 5;
     var color = colorArray[Math.floor(Math.random() * colorArray.length)];
 
