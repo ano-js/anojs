@@ -29,16 +29,10 @@ var y = 300;
 var radius = 30;
 
 // Speed
-var ANOJS_SPEED;
-
 var dx = ANOJS_SPEED;
 var dy = ANOJS_SPEED;
 
 // Colors
-var ANOJS_COLOR_1;
-var ANOJS_COLOR_2;
-var ANOJS_COLOR_3;
-
 var colorArray = [ANOJS_COLOR_1, ANOJS_COLOR_2, ANOJS_COLOR_3];
 
 function Circle(x, y, dx, dy, radius, color) {
