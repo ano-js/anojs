@@ -24,8 +24,8 @@ class Dot {
         this.y = v.y;
         this.v = v;
         this.radius = radius;
-        this.vx = Math.random() * 1;
-        this.vy = Math.random() * 1;
+        this.vx = Math.random() * 0.5;
+        this.vy = Math.random() * 0.5;
         if(Math.random() < 0.5) {
             this.vx *= -1;
             this.vy *= -1;
@@ -64,7 +64,7 @@ class Dot {
     FindNearest() {
         for(var i = 0; i < dots_count; i++) {
             if(dots[i].id != this.id) {
-                if(Vector2.Distance(this.v, dots[i].v) < 150) {
+                if(Vector2.Distance(this.v, dots[i].v) < canvas.width/8) {
                     c.beginPath();
                     c.moveTo(this.x, this.y)
                     c.lineTo(dots[i].x, dots[i].y)
