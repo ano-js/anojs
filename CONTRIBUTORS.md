@@ -4,7 +4,7 @@
 
 Thank you so much for being a part of the Ano.js team! This is a great way to get involved with the community, as well as improving your software engineering skills and your professional career. Below is more information on what your job is, what you will be doing, and how you will do it.
 
-Make sure you [join our Slack channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU) to stay updated on Ano.js and get help with whatever you need!
+Make sure you [join our discord channel](https://discord.gg/xkdRm7E) to stay updated on Ano.js and get help with whatever you need!
 
 <b> If you are not already a contributor, become one at [anojs.com/join-us](https://anojs.com/join-us)! </b>
 
@@ -16,7 +16,7 @@ Ano.js contributors will create web animations themselves and deploy them so use
 ## Assessing your skill level
 You don't need to know how to code to be a contributor. But, in order to contribute properly, you should learn some basic skills. Here are the skills you will need to be able to contribute a huge amount to Ano.js:
 - Basic HTML/CSS
-- Good grasp of Javascript 
+- Good grasp of Javascript - this repo is written in plain javascript
 - Basic Git/GitHub skills
   - Pushing/pulling from a repository
   - Making pull requests
@@ -41,7 +41,7 @@ Ano.js supports animations created with three different technologies:
 
 These technologies have been labelled with their difficulty level, what type of animation they're good at creating, along with some examples to see what has been done with each. Please pick the technology level that suits you best. Remember, all three technologies can create some amazing web animations!
 
-<b> NOTE: Some of these tutorials use Codepen.io, but in order to contribute to Ano.js, you must do it in a .js file. See [OPTIMIZATION.md](OPTIMIZATION.md) for more details. </b>
+<b> NOTE: Some of these tutorials use Codepen.io, but in order to contribute to Ano.js, you must do it in a .js file. See [CONTRIBUTION-GUIDELINES.md](CONTRIBUTION-GUIDELINES.md) for more details. </b>
 
 To learn any of the three technologies, the links have been put down below:
 - [Complete HTML5 Canvas + Javascript Web Animation Course (4 hours)](https://www.youtube.com/playlist?list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL)
@@ -59,7 +59,7 @@ The way to contribute to Ano.js is very simple:
 2. Open a pull request
     - We will take a look at your animation. We will assess the following
       - Does the animation work?
-      - Is it optimized properly?
+      - Is it formatted properly?
       - Is it original?
 4. Wait!
     - If your pull request is accepted, your animation will be deployed directly (with your name on it) to the website and users can start using it!
@@ -74,6 +74,10 @@ The way to contribute to Ano.js is very simple:
 
 ## Questions?
 
-If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question, or you can send a message in our [Slack channel](https://join.slack.com/t/anojs-project/shared_invite/enQtOTY1NTI5MTU0Mjg5LWRmY2ZlMjE2MTYyM2ZlYmZiNWYzY2E4NGJmNDgwNWU3MjZjNTIwZmVhODc1M2M2N2M1MzE2NDFkNDM4NTgxNGU).
+If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question, or you can send a message in our [discord](https://discord.gg/erjPPV8).
 
 You can also directly contact Calix Huang at calix.huang1@gmail.com
+
+
+
+

@@ -1,141 +1,139 @@
 // calixo888
 
-let canvasDiv = document.querySelector("#anojs-connecting-particles")
+let canvasDiv = document.querySelector("#anojs-connecting-particles");
 
-canvasDiv.innerHTML += "<canvas id='anojs-connecting-particles-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-connecting-particles-canvas'></canvas>";
 
-let canvas = document.querySelector("#anojs-connecting-particles-canvas")
+let canvas = document.querySelector("#anojs-connecting-particles-canvas");
 
-canvas.style.width ='100%';
-canvas.style.height='100%';
+canvas.style.width = '100%';
+canvas.style.height = '100%';
 
-canvas.width  = canvas.offsetWidth;
+canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
-let c = canvas.getContext("2d")
+let c = canvas.getContext("2d");
 
 let mouse = {
-  x: undefined,
-  y: undefined
-}
+    x: undefined,
+    y: undefined
+};
 
-let closestParticle = undefined
+let closestParticle = undefined;
 
 // Event Listeners
 addEventListener("click", (event) => {
-  mouse.x = event.x
-  mouse.y = event.y
+    mouse.x = event.x;
+    mouse.y = event.y;
 
-  particles.forEach(particle => {
-    // particle.centroid = false
+    particles.forEach(particle => {
+        // particle.centroid = false
 
-    if (closestParticle == undefined) {
-      closestParticle = particle
-    }
-    else if (distance(event.x, event.y, particle.x, particle.y) < distance(event.x, event.y, closestParticle.x, closestParticle.y)) {
-      closestParticle = particle
-    }
-  })
+        if (closestParticle == undefined) {
+            closestParticle = particle;
+        } else if (distance(event.x, event.y, particle.x, particle.y) < distance(event.x, event.y, closestParticle.x, closestParticle.y)) {
+            closestParticle = particle;
+        }
+    });
 
-  // closestParticle.centroid = true
-})
+    // closestParticle.centroid = true
+});
 
 addEventListener("resize", () => {
-  innerWidth = window.innerWidth
-  innerHeight = window.innerHeight
-})
+    innerWidth = window.innerWidth;
+    innerHeight = window.innerHeight;
+});
 
 class Particle {
-  constructor(x, y, dx, dy, radius, color, centroid) {
-    this.x = x
-    this.y = y
-    this.dx = dx
-    this.dy = dy
-    this.radius = radius
-    this.color = color
-    this.centroid = centroid
-  }
-
-  draw() {
-    if (this.centroid) {
-      c.fillStyle = "rgba(0,0,0,0)"
-    }
-    else {
-      c.fillStyle = this.color
-    }
-    c.shadowColor = "white"
-    c.shadowBlur = 3
-    c.beginPath()
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-    c.fill()
-    c.closePath()
-    c.shadowBlur = 0
-    c.shadowColor = "rgba(0,0,0,0)"
-  }
-
-  update(particles) {
-    if (this.x + this.radius + this.dx >= innerWidth || this.x + this.radius + this.dx <= 0) {
-      this.dx = -this.dx
+    constructor(x, y, dx, dy, radius, color, centroid) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.radius = radius;
+        this.color = color;
+        this.centroid = centroid;
     }
 
-    if (this.y + this.radius + this.dy >= innerHeight || this.y + this.radius + this.dy <= 0) {
-      this.dy = -this.dy
+    draw() {
+        if (this.centroid) {
+            c.fillStyle = "ANOJS_COLOR_1";
+        } else {
+            c.fillStyle = this.color;
+        }
+        c.shadowColor = "white";
+        c.shadowBlur = 3;
+        c.beginPath();
+        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        c.fill();
+        c.closePath();
+        c.shadowBlur = 0;
+        c.shadowColor = "ANOJS_COLOR_2";
     }
 
-    this.x += this.dx
-    this.y += this.dy
-    this.draw()
+    update(particles) {
+        if (this.x + this.radius + this.dx >= innerWidth || this.x + this.radius + this.dx <= 0) {
+            this.dx = -this.dx;
+        }
 
-    if (this.centroid) {
-      particles.forEach(particle => {
-        c.beginPath()
-        c.moveTo(this.x, this.y)
-        c.lineTo(particle.x, particle.y)
-        c.stroke()
-        c.closePath()
-      })
+        if (this.y + this.radius + this.dy >= innerHeight || this.y + this.radius + this.dy <= 0) {
+            this.dy = -this.dy;
+        }
+
+        this.x += this.dx;
+        this.y += this.dy;
+        this.draw();
+
+        if (this.centroid) {
+            particles.forEach(particle => {
+                c.beginPath();
+                c.moveTo(this.x, this.y);
+                c.lineTo(particle.x, particle.y);
+                c.stroke();
+                c.closePath();
+            });
+        }
     }
-  }
 }
 
 let distance = (x1, x2, y1, y2) => {
-  return Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2))
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 }
 
-let particles = []
+let particles = [];
 
 let init = () => {
-  for (var i = 0; i < 200; i++) {
-    let x = Math.random() * innerWidth
-    let y = Math.random() * innerHeight
-    let dx = (Math.random() - 0.5) * 2
-    let dy = (Math.random() - 0.5) * 2
-    let radius = 5
-    let color = "white"
+    for (var i = 0; i < 200; i++) {
+        let x = Math.random() * innerWidth;
+        let y = Math.random() * innerHeight;
+        let dx = (Math.random() - 0.5) * 2;
+        let dy = (Math.random() - 0.5) * 2;
+        let radius = 5;
+        let color = "ANOJS_COLOR_3";
 
-    let particle = new Particle(x, y, dx, dy, radius, color, false)
-    particles.push(particle)
-  }
+        let particle = new Particle(x, y, dx, dy, radius, color, false);
+        particles.push(particle);
+    }
 
-  for (var i = 0; i < 1; i++) {
-    particles[Math.floor(Math.random() * particles.length)].centroid = true
-  }
+    for (var i = 0; i < 1; i++) {
+        particles[Math.floor(Math.random() * particles.length)].centroid = true;
+    }
 }
 
 let animate = () => {
-  requestAnimationFrame(animate)
-  // Background
-  var grd = c.createLinearGradient(innerWidth / 2, 0, innerWidth / 2, innerHeight);
-  grd.addColorStop(0, "#171e26");
-  grd.addColorStop(1, "#3f586b");
+    requestAnimationFrame(animate);
+    // Background
+    var grd = c.createLinearGradient(innerWidth / 2, 0, innerWidth / 2, innerHeight);
+    grd.addColorStop(0, "ANOJS_COLOR_4");
+    grd.addColorStop(1, "ANOJS_COLOR_5");
 
-  c.fillStyle = grd;
-  c.fillRect(0, 0, innerWidth, innerHeight);
+    c.fillStyle = grd;
+    c.fillRect(0, 0, innerWidth, innerHeight);
 
-  particles.forEach(particle => {
-    particle.update(particles)
-  })
+    particles.forEach(particle => {
+        particle.update(particles);
+    });
 }
 
-init()
-animate()
+init();
+animate();

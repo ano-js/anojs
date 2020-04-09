@@ -1,115 +1,112 @@
 // calixo888
 
-let canvasDiv = document.querySelector("#anojs-colliding-circles")
+let canvasDiv = document.querySelector("#anojs-colliding-circles");
 
-canvasDiv.innerHTML += "<canvas id='anojs-colliding-circles-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-colliding-circles-canvas'></canvas>";
 
-let canvas = document.querySelector("#anojs-colliding-circles-canvas")
+let canvas = document.querySelector("#anojs-colliding-circles-canvas");
 
-canvas.style.width ='100%';
-canvas.style.height='100%';
+canvas.style.width = '100%';
+canvas.style.height = '100%';
 
-canvas.width  = canvas.offsetWidth;
+canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
 var c = canvas.getContext("2d");
 
 let strokeColorArray = [
-  "#a24f76",
-  "#5ddb38",
-  "#9caaf2",
-  "#e34047"
-]
+    "ANOJS_COLOR_1",
+    "ANOJS_COLOR_2",
+    "ANOJS_COLOR_3",
+    "ANOJS_COLOR_4"
+];
 
 let fillColorArray = [
-  "rgba(162, 79, 118, 0.75)",
-  "rgba(93, 219, 56, 0.75)",
-  "rgba(156, 170, 242, 0.75)",
-  "rgba(227, 64, 71, 0.75)"
-]
+    "ANOJS_COLOR_5",
+    "ANOJS_COLOR_6",
+    "ANOJS_COLOR_7",
+    "ANOJS_COLOR_8"
+];
 
 let mouse = {
-  x: undefined,
-  y: undefined
-}
+    x: undefined,
+    y: undefined
+};
 
 // Event Listeners
 addEventListener("mousemove", event => {
-  mouse.x = event.x
-  mouse.y = event.y
+    mouse.x = event.x;
+    mouse.y = event.y;
 })
 
 addEventListener("resize", () => {
-  innerWidth = window.innerWidth
-  innerHeight = window.innerHeight
+    innerWidth = window.innerWidth;
+    innerHeight = window.innerHeight;
 })
 
 class Particle {
-  constructor(x, y, dx, dy, radius, strokeColor, fillColor) {
-    this.x = x
-    this.y = y
-    this.velocity = {
-      x: dx,
-      y: dy
-    }
-    this.radius = radius
-    this.strokeColor = strokeColor
-    this.fillColor = fillColor
-    this.mass = 1
-    this.opacity = 0
-  }
-
-  draw() {
-    c.strokeStyle = this.strokeColor
-    c.fillStyle = this.fillColor
-    c.beginPath()
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-    c.save()
-    c.globalAlpha = this.opacity
-    c.fill()
-    c.restore()
-    c.stroke()
-    c.closePath()
-  }
-
-  update(particles) {
-    if (this.x + this.radius + this.velocity.x >= innerWidth || this.x + this.radius + this.velocity.x <= 0) {
-      this.velocity.x = -this.velocity.x
+    constructor(x, y, dx, dy, radius, strokeColor, fillColor) {
+        this.x = x;
+        this.y = y;
+        this.velocity = {
+            x: dx,
+            y: dy
+        };
+        this.radius = radius;
+        this.strokeColor = strokeColor;
+        this.fillColor = fillColor;
+        this.mass = 1;
+        this.opacity = 0;
     }
 
-    if (this.y + this.radius + this.velocity.y >= innerHeight || this.y + this.radius + this.velocity.y <= 0) {
-      this.velocity.y = -this.velocity.y
+    draw() {
+        c.strokeStyle = this.strokeColor;
+        c.fillStyle = this.fillColor;
+        c.beginPath();
+        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        c.save();
+        c.globalAlpha = this.opacity;
+        c.fill();
+        c.restore();
+        c.stroke();
+        c.closePath();
     }
 
-    if (getDistance(mouse.x, mouse.y, this.x, this.y) < 100 && this.opacity < 0.5) {
-      this.opacity += 0.03
+    update(particles) {
+        if (this.x + this.radius + this.velocity.x >= innerWidth || this.x + this.radius + this.velocity.x <= 0) {
+            this.velocity.x = -this.velocity.x;
+        }
+
+        if (this.y + this.radius + this.velocity.y >= innerHeight || this.y + this.radius + this.velocity.y <= 0) {
+            this.velocity.y = -this.velocity.y;
+        }
+
+        if (getDistance(mouse.x, mouse.y, this.x, this.y) < 100 && this.opacity < 0.5) {
+            this.opacity += 0.03;
+        } else if (this.opacity > 0) {
+            this.opacity -= 0.03;
+            this.opacity = Math.max(0, this.opacity);
+        }
+
+        for (let particle of particles) {
+            if (this === particle) {
+                continue;
+            } else {
+                if (getDistance(this.x, this.y, particle.x, particle.y) - (this.radius * 2) < 0) {
+                    resolveCollision(this, particle);
+                }
+            }
+        }
+
+        this.x += this.velocity.x;
+        this.y += this.velocity.y;
+
+        this.draw();
     }
-    else if (this.opacity > 0) {
-      this.opacity -= 0.03
-
-      this.opacity = Math.max(0, this.opacity)
-    }
-
-    for (let particle of particles) {
-       if (this === particle) {
-         continue
-       }
-       else {
-         if (getDistance(this.x, this.y, particle.x, particle.y) - (this.radius * 2) < 0) {
-           resolveCollision(this, particle)
-         }
-       }
-    }
-
-    this.x += this.velocity.x
-    this.y += this.velocity.y
-
-    this.draw()
-  }
 }
 
 let getDistance = (x1, y1, x2, y2) => {
-  return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2))
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 }
 
 function rotate(velocity, angle) {
@@ -135,16 +132,20 @@ function resolveCollision(particle, otherParticle) {
         const angle = -Math.atan2(otherParticle.y - particle.y, otherParticle.x - particle.x);
 
         // Store mass in var for better readability in collision equation
-        const m1 = particle.mass;
-        const m2 = otherParticle.mass;
+        const local_mass = particle.mass;
+        const other_mass = otherParticle.mass;
+
+        //masses mathified for readability
+        const mass_sum = local_mass + other_mass;
+        const mass_diff = local_mass - other_mass;
 
         // Velocity before equation
         const u1 = rotate(particle.velocity, angle);
         const u2 = rotate(otherParticle.velocity, angle);
 
         // Velocity after 1d collision equation
-        const v1 = { x: u1.x * (m1 - m2) / (m1 + m2) + u2.x * 2 * m2 / (m1 + m2), y: u1.y };
-        const v2 = { x: u2.x * (m1 - m2) / (m1 + m2) + u1.x * 2 * m2 / (m1 + m2), y: u2.y };
+        const v1 = { x: u1.x * mass_diff / mass_sum + u2.x * 2 * other_mass / mass_sum, y: u1.y };
+        const v2 = { x: u2.x * mass_diff / mass_sum + u1.x * 2 * other_mass / mass_sum, y: u2.y };
 
         // Final velocity after rotating axis back to original location
         const vFinal1 = rotate(v1, -angle);
@@ -162,40 +163,40 @@ function resolveCollision(particle, otherParticle) {
 let particles = [];
 
 let init = () => {
-  for (let i = 0; i < 300; i++) {
-    let x = (Math.random() * (innerWidth - 50)) + 25
-    let y = (Math.random() * (innerHeight - 50)) + 25
-    let dx = (Math.random() - 0.5) * 3
-    let dy = (Math.random() - 0.5) * 3
-    const radius = 15
-    const strokeColor = strokeColorArray[Math.floor(Math.random() * strokeColorArray.length)]
-    const fillColor = fillColorArray[strokeColorArray.indexOf(strokeColor)]
+    for (let i = 0; i < 300; i++) {
+        let x = (Math.random() * (innerWidth - 50)) + 25;
+        let y = (Math.random() * (innerHeight - 50)) + 25;
+        let dx = (Math.random() - 0.5) * 3;
+        let dy = (Math.random() - 0.5) * 3;
+        const radius = 15;
+        const strokeColor = strokeColorArray[Math.floor(Math.random() * strokeColorArray.length)];
+        const fillColor = fillColorArray[strokeColorArray.indexOf(strokeColor)];
 
-    if (i !== 0) {
-      for (let j = 0; j < particles.length; j++) {
-        let tempParticle = particles[j]
-        if (getDistance(x, y, tempParticle.x, tempParticle.y) - (radius * 2) < 0) {
-          x = (Math.random() * (innerWidth - 50)) + 25
-          y = (Math.random() * (innerHeight - 50)) + 25
+        if (i !== 0) {
+            for (let j = 0; j < particles.length; j++) {
+                let tempParticle = particles[j];
+                if (getDistance(x, y, tempParticle.x, tempParticle.y) - (radius * 2) < 0) {
+                    x = (Math.random() * (innerWidth - 50)) + 25;
+                    y = (Math.random() * (innerHeight - 50)) + 25;
 
-          j = -1
+                    j = -1;
+                }
+            }
         }
-      }
-    }
 
-    let particle = new Particle(x, y, dx, dy, radius, strokeColor, fillColor)
-    particles.push(particle)
-  }
+        let particle = new Particle(x, y, dx, dy, radius, strokeColor, fillColor);
+        particles.push(particle);
+    }
 }
 
 let animate = () => {
-  requestAnimationFrame(animate)
-  c.clearRect(0, 0, innerWidth, innerHeight)
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, innerWidth, innerHeight);
 
-  particles.forEach(particle => {
-    particle.update(particles)
-  })
+    particles.forEach(particle => {
+        particle.update(particles);
+    });
 }
 
-init()
-animate()
+init();
+animate();
