@@ -1,107 +1,106 @@
 // calixo888
 
-let canvasDiv = document.querySelector("#anojs-circular-motion")
+let canvasDiv = document.querySelector("#anojs-circular-motion");
 
-canvasDiv.innerHTML += "<canvas id='anojs-circular-motion-canvas'></canvas>"
+canvasDiv.innerHTML += "<canvas id='anojs-circular-motion-canvas'></canvas>";
 
-let canvas = document.querySelector("#anojs-circular-motion-canvas")
+let canvas = document.querySelector("#anojs-circular-motion-canvas");
 
-canvas.style.width ='100%';
-canvas.style.height='100%';
+canvas.style.width = '100%';
+canvas.style.height = '100%';
 
-canvas.width  = canvas.offsetWidth;
+canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
-let c = canvas.getContext("2d")
+let c = canvas.getContext("2d");
 
 let mouse = {
-  x: undefined,
-  y: undefined
-}
+    x: undefined,
+    y: undefined
+};
 
-let goingRight = true
+let goingRight = true;
 
 const colors = [
-  "#00bdff",
-  "#4d39ce",
-  "#088eff"
-]
+    "ANOJS_COLOR_1",
+    "ANOJS_COLOR_2",
+    "ANOJS_COLOR_3"
+];
 
 // Event Listener
 addEventListener("mousemove", event => {
-  mouse.x = event.x
-  mouse.y = event.y
-})
+    mouse.x = event.x;
+    mouse.y = event.y;
+});
 
 addEventListener("resize", () => {
-  innerWidth = window.innerWidth
-  innerHeight = window.innerHeight
-})
+    innerWidth = window.innerWidth;
+    innerHeight = window.innerHeight;
+});
 
 addEventListener("click", () => {
-  goingRight = goingRight ? false : true
-})
+    goingRight = goingRight ? false : true;
+});
 
 function Circle(x, y, radius, color) {
-  this.x = x
-  this.y = y
-  this.radius = radius
-  this.radians = Math.random() * Math.PI * 2
-  this.velocity = 0.05;
-  this.color = color
-  this.distanceFromCenter = (Math.random() * 100) + 75
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
+    this.radians = Math.random() * Math.PI * 2;
+    this.velocity = 0.05;
+    this.color = color;
+    this.distanceFromCenter = (Math.random() * 100) + 75;
 
-  this.draw = (lastPoint) => {
-    c.beginPath()
-    c.strokeStyle = this.color
-    c.lineWidth = this.radius
-    c.moveTo(lastPoint.x, lastPoint.y)
-    c.lineTo(this.x, this.y)
-    c.stroke()
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-    c.fill()
-    c.closePath()
-  }
+    this.draw = (lastPoint) => {
+        c.beginPath();
+        c.strokeStyle = this.color;
+        c.lineWidth = this.radius;
+        c.moveTo(lastPoint.x, lastPoint.y);
+        c.lineTo(this.x, this.y);
+        c.stroke();
+        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        c.fill();
+        c.closePath();
+    };
 
-  this.update = () => {
-    const lastPoint = {x: this.x, y: this.y}
-    this.radians += this.velocity;
+    this.update = () => {
+        const lastPoint = { x: this.x, y: this.y };
+        this.radians += this.velocity;
 
-    if (goingRight) {
-      this.x = mouse.x + Math.cos(this.radians) * this.distanceFromCenter
-      this.y = mouse.y + Math.sin(this.radians) * this.distanceFromCenter
+        if (goingRight) {
+            this.x = mouse.x + Math.cos(this.radians) * this.distanceFromCenter;
+            this.y = mouse.y + Math.sin(this.radians) * this.distanceFromCenter;
+        } else {
+            this.x = mouse.x + Math.sin(this.radians) * this.distanceFromCenter;
+            this.y = mouse.y + Math.cos(this.radians) * this.distanceFromCenter;
+        }
+        this.draw(lastPoint);
     }
-    else {
-      this.x = mouse.x + Math.sin(this.radians) * this.distanceFromCenter
-      this.y = mouse.y + Math.cos(this.radians) * this.distanceFromCenter
-    }
-    this.draw(lastPoint)
-  }
 }
 
-let circles = []
+let circles = [];
 
 let init = () => {
-  for (let i = 0; i < 125; i++) {
-    let x = innerWidth / 2
-    let y = innerHeight / 2
-    let radius = Math.random() * 2 + 2
-    let color = colors[Math.floor(Math.random() * colors.length)]
+    for (let i = 0; i < 125; i++) {
+        let x = innerWidth / 2;
+        let y = innerHeight / 2;
+        let radius = Math.random() * 2 + 2;
+        let color = colors[Math.floor(Math.random() * colors.length)];
 
-    let circle = new Circle(x, y, radius, color)
-    circles.push(circle)
-  }
-}
+        let circle = new Circle(x, y, radius, color);
+        circles.push(circle);
+    }
+};
 
 let animate = () => {
-  requestAnimationFrame(animate)
-  c.fillStyle = "rgba(255, 255, 255, 0.05)"
-  c.fillRect(0, 0, innerWidth, innerHeight)
+    requestAnimationFrame(animate);
+    c.fillStyle = "ANOJS_COLOR_4";
+    c.fillRect(0, 0, innerWidth, innerHeight);
 
-  circles.forEach(circle => {
-    circle.update()
-  })
-}
+    circles.forEach(circle => {
+        circle.update();
+    });
+};
 
-init()
-animate()
+init();
+animate();

@@ -1,10 +1,10 @@
 // calixo888
 
-let canvasDiv = document.querySelector("#anojs-growing-circles");
+let canvasDiv = document.querySelector("#anojs-custom-growing-circles");
 
-canvasDiv.innerHTML += "<canvas id='anojs-growing-circles-canvas'></canvas>";
+canvasDiv.innerHTML += "<canvas id='anojs-custom-growing-circles-canvas'></canvas>";
 
-let canvas = document.querySelector("#anojs-growing-circles-canvas");
+let canvas = document.querySelector("#anojs-custom-growing-circles-canvas");
 
 canvas.style.width = '100%';
 canvas.style.height = '100%';
@@ -24,16 +24,12 @@ window.addEventListener("mousemove", (event) => {
     mouse.y = event.y;
 });
 
-addEventListener("resize", () => {
-    innerWidth = window.innerWidth;
-    innerHeight = window.innerHeight;
-});
-
 var x = 700;
 var y = 300;
-var dx = 10;
-var dy = 10;
 var radius = 30;
+
+// Colors
+var colorArray = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3"];
 
 function Circle(x, y, dx, dy, radius, color) {
     this.x = x;
@@ -64,10 +60,10 @@ function Circle(x, y, dx, dy, radius, color) {
         this.y += this.dy;
 
         // Interactivity
-        if (mouse.x - this.x < 100 && mouse.x - this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100 && this.radius < 50) {
-            this.radius += 2;
+        if (mouse.x - this.x < 100 && mouse.x - this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100 && this.radius < 40) {
+            this.radius += 1.5;
         } else if (this.radius > this.origRadius) {
-            this.radius -= 2;
+            this.radius -= 1.5;
         }
 
         this.draw();
@@ -76,15 +72,16 @@ function Circle(x, y, dx, dy, radius, color) {
 
 var circle = new Circle(x, y, dx, dy, radius);
 
-var colorArray = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3", "ANOJS_COLOR_4"];
-
 var circles = [];
 
-for (var i = 0; i < 500; i++) {
+for (var i = 0; i < 400; i++) {
     var x = Math.random() * window.innerWidth + radius;
     var y = Math.random() * window.innerHeight + radius;
-    var dx = (Math.random() - 0.5) * 3;
-    var dy = (Math.random() - 0.5) * 3;
+
+    // Speed
+    var dx = ANOJS_SPEED_1;
+    var dy = ANOJS_SPEED_2;
+
     var radius = (Math.random() * 5) + 5;
     var color = colorArray[Math.floor(Math.random() * colorArray.length)];
 

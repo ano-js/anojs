@@ -9,9 +9,10 @@ function centerBurst() {
   burst6 = new mojs.Burst(burst6Constructor);
   circle = new mojs.Shape(circleConstructor);
 
-  new mojs.Timeline().add(burst, burst2, burst3, burst4, burst5, burst6, circle).play();
+  new mojs.Timeline()
+    .add(burst, burst2, burst3, burst4, burst5, burst6, circle)
+    .play();
 }
-
 
 const burstConstructor = {
   radius: { 0: 100 },
@@ -19,12 +20,12 @@ const burstConstructor = {
   count: 20,
   children: {
     shape: "cross",
-    stroke: "#22b3d4",
+    stroke: "ANOJS_COLOR_1",
     strokeWidth: { 6: 0 },
     angle: { 360: 0 },
     radius: { 20: 10 },
-    duration: 4000
-  }
+    duration: 4000,
+  },
 };
 
 const burst2Constructor = {
@@ -32,14 +33,14 @@ const burst2Constructor = {
   count: 18,
   children: {
     shape: "circle",
-    stroke: { "cyan": "orange" },
+    stroke: { ANOJS_COLOR_2: "ANOJS_COLOR_3" },
     opacity: { 1: 0 },
     fill: "none",
     strokeWidth: { 6: 0 },
     angle: { 0: 360 },
     radius: 10,
-    duration: 4000
-  }
+    duration: 4000,
+  },
 };
 
 const burst3Constructor = {
@@ -48,14 +49,14 @@ const burst3Constructor = {
   count: 18,
   children: {
     shape: "circle",
-    stroke: "#227bd4",
+    stroke: "ANOJS_COLOR_4",
     opacity: { 1: 0 },
     fill: "none",
     strokeWidth: { 6: 0 },
     angle: { 0: 360 },
     radius: 10,
-    duration: 4000
-  }
+    duration: 4000,
+  },
 };
 
 const burst4Constructor = {
@@ -63,14 +64,14 @@ const burst4Constructor = {
   count: 6,
   children: {
     shape: "polygon",
-    stroke: "#22d451",
+    stroke: "ANOJS_COLOR_5",
     opacity: { 1: 0 },
     fill: "none",
     strokeWidth: { 10: 0 },
     angle: { 0: 720 },
     radius: { 20: 10 },
-    duration: 4000
-  }
+    duration: 4000,
+  },
 };
 
 const burst5Constructor = {
@@ -79,12 +80,12 @@ const burst5Constructor = {
   count: 16,
   children: {
     shape: "polygon",
-    fill: "#227bd2",
+    fill: "ANOJS_COLOR_6",
     opacity: { 1: 0 },
     angle: { 0: 720 },
     radius: { 20: 10 },
-    duration: 4000
-  }
+    duration: 4000,
+  },
 };
 
 const burst6Constructor = {
@@ -93,30 +94,30 @@ const burst6Constructor = {
   count: 30,
   children: {
     shape: "zigzag",
-    stroke: { "cyan": "orange" },
+    stroke: { ANOJS_COLOR_7: "ANOJS_COLOR_8" },
     opacity: { 1: 0 },
     fill: "none",
     strokeWidth: { 10: 0 },
     angle: { 0: 720 },
     radius: { 20: 10 },
-    duration: 4000
-  }
+    duration: 4000,
+  },
 };
 
 const circleConstructor = {
   radius: { 0: 800 },
   fill: "none",
-  stroke: "#95f26d",
+  stroke: "ANOJS_COLOR_9",
   duration: 4000,
-  opacity: {1:0},
+  opacity: { 1: 0 },
 };
 
 centerBurst();
-setInterval(function() {
+setInterval(function () {
   centerBurst();
   $("#anojs-center-interval-burst").innerHTML = "";
 
-  setTimeout(function() {
+  setTimeout(function () {
     for (mojsShape of document.querySelectorAll("[data-name=mojs-shape]")) {
       mojsShape.remove();
     }
