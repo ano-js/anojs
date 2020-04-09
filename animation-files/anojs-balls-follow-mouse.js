@@ -1,3 +1,5 @@
+//vplentinax
+
 let canvasDiv = document.getElementById('anojs-balls-follow-mouse');
 
 canvasDiv.innerHTML += "<canvas id='anojs-balls-follow-mouse-canvas'></canvas>";
@@ -8,8 +10,8 @@ let context = canvas.getContext('2d');
 console.log(canvas);
 
 let mouse = {
-  x: innerWidth / 2,
-  y: innerHeight / 2
+  x: innerWidth,
+  y: innerHeight
 }
 
 window.addEventListener('mousemove', function(event) {
@@ -96,7 +98,7 @@ function Circle(x, y, dx, dy, nx, ny, color) {
 function animate() {
   requestAnimationFrame(animate);
   context.clearRect(0, 0, innerWidth, innerHeight);
-  context.fillRect(0, 0, innerWidth, innerHeight);
+  context.fillRect(0, 0,  screen.width, screen.height);
   context.fillStyle = 'rgb(34, 34, 34)';
 
   for (var i = 0; i < arrCircle.length; i++) {
