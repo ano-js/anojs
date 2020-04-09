@@ -27,7 +27,7 @@ let amplitude = 100;
 
 let animate = () => {
     requestAnimationFrame(animate);
-    c.fillStyle = "rgba(0,0,0,0.01)";
+    c.fillStyle = "ANOJS_COLOR_1";
     c.fillRect(0, 0, innerWidth, innerHeight);
 
     for (var i = 0; i < 3; i++) {

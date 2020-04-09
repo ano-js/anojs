@@ -76,7 +76,7 @@ function Circle(x, y, dx, dy, radius, color) {
 
 var circle = new Circle(x, y, dx, dy, radius);
 
-var colorArray = ["rgb(212, 170, 76)", "rgb(116, 187, 245)", "rgb(242, 108, 99)", "rgb(94, 238, 126)"];
+var colorArray = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3", "ANOJS_COLOR_4"];
 
 var circles = [];
 
