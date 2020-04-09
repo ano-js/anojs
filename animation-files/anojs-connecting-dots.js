@@ -1,3 +1,5 @@
+// jabo-bernardo
+
 let canvasDiv = document.querySelector("#anojs-connecting-dots");
 canvasDiv.innerHTML += "<canvas id='anojs-connecting-dots-canvas'></canvas>";
 let canvas = document.querySelector("#anojs-connecting-dots-canvas");
