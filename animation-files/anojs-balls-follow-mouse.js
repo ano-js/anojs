@@ -1,4 +1,4 @@
-//vplentinax
+// vplentinax
 
 let canvasDiv = document.getElementById('anojs-balls-follow-mouse');
 
@@ -88,7 +88,6 @@ function Circle(x, y, dx, dy, nx, ny, color) {
         this.x += this.dx * 2;
         this.y += this.dy * 2;
         context.stroke();
-
       }
     }
     this.draw();
