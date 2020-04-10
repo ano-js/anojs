@@ -14,7 +14,7 @@ canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext('2d');
 
-let randomColor = ['#757938', '#bc9b64', '#9db81c'];
+let randomColor = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
 
 class Circle {
     constructor(x, y, rad) {

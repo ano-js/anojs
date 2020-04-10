@@ -21,7 +21,7 @@ const burstConstructor = {
     count: 20,
     children: {
         shape: "cross",
-        stroke: "teal",
+        stroke: "ANOJS_COLOR_1",
         strokeWidth: { 6: 0 },
         angle: { 360: 0 },
         radius: { 20: 10 },
@@ -34,7 +34,7 @@ const burst2Constructor = {
     count: 18,
     children: {
         shape: "zigzag",
-        stroke: { "cyan": "orange" },
+        stroke: { "ANOJS_COLOR_2": "ANOJS_COLOR_3" },
         opacity: { 1: 0 },
         fill: "none",
         strokeWidth: { 6: 0 },
@@ -47,7 +47,7 @@ const burst2Constructor = {
 const circleConstructor = {
     radius: { 0: 400 },
     fill: "none",
-    stroke: "teal",
+    stroke: "ANOJS_COLOR_4",
     duration: 3000,
     opacity: { 1: 0 },
 };

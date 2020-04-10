@@ -28,16 +28,16 @@ window.addEventListener('resize', function() {
 });
 
 var arrColor = [
-    '#D34F73',
-    '#23395B',
-    '#D34F73',
-    '#23395B',
-    '#D34F73',
-    '#23395B',
-    '#D34F73',
-    '#23395B',
-    '#D34F73',
-    '#23395B'
+    'ANOJS_COLOR_1',
+    'ANOJS_COLOR_2',
+    'ANOJS_COLOR_3',
+    'ANOJS_COLOR_4',
+    'ANOJS_COLOR_5',
+    'ANOJS_COLOR_6',
+    'ANOJS_COLOR_7',
+    'ANOJS_COLOR_8',
+    'ANOJS_COLOR_9',
+    'ANOJS_COLOR_10'
 ];
 
 var arrCircle = [];

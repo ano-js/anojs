@@ -35,7 +35,7 @@ class MouseData {
                 c.lineTo(this.mouseLastPosition[i].x,this.mouseLastPosition[i].y);
             }
         }
-        c.fillStyle = "orange";
+        c.fillStyle = "ANOJS_COLOR_1";
         c.fill();
 
     }
@@ -45,7 +45,7 @@ let mouse = new MouseData();
 
 let animationLoop = function() {
 
-    c.fillStyle = 'rgb(10, 10, 10)';
+    c.fillStyle = 'ANOJS_COLOR_2';
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     mouse.update();

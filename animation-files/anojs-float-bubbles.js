@@ -9,7 +9,7 @@ let context = canvas.getContext('2d');
 
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
-canvas.style.background = 'rgba(4, 34, 68, 0.9)';
+canvas.style.background = 'ANOJS_COLOR_1';
 
 let bubblesArr;
 
@@ -51,7 +51,7 @@ function init() {
         let y = Math.random() * (innerHeight - size * 2);
         let dirX = (Math.random() * 0.4) - 0.2;
         let dirY = (Math.random() * 0.4) - 0.2;
-        let color = 'gray';
+        let color = 'ANOJS_COLOR_2';
 
         bubblesArr.push(new Bubbles(x, y, dirX, dirY, size, color));
     }
