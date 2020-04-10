@@ -10,8 +10,7 @@ let context = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-let textRain =
-  "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑"; //letters that are used in the rain
+let textRain = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑"; //letters that are used in the rain
 
 textRain = textRain.split("");
 
@@ -25,28 +24,28 @@ for (var x = 0; x < columns; x++) {
 }
 
 let arrColor = [
-  "ANOJS_COLOR_1",
-  "ANOJS_COLOR_2",
-  "ANOJS_COLOR_3",
-  "ANOJS_COLOR_4",
-  "ANOJS_COLOR_5",
-  "ANOJS_COLOR_6",
-  "ANOJS_COLOR_7",
-  "ANOJS_COLOR_8",
-  "ANOJS_COLOR_9",
-  "ANOJS_COLOR_10",
-  "ANOJS_COLOR_11",
-  "ANOJS_COLOR_12",
-  "ANOJS_COLOR_13",
-  "ANOJS_COLOR_14",
-  "ANOJS_COLOR_15",
-  "ANOJS_COLOR_16",
-  "ANOJS_COLOR_17",
-  "ANOJS_COLOR_18",
+  '#502419',
+  '#635380',
+  '#D2BF55',
+  '#9FFCDF',
+  '#E9E3B4',
+  '#C19875',
+  '#F2E3BC',
+  '#618985 ',
+  '#D34F73',
+  '#DB7F67',
+  '#0EB1D2',
+  '#7A9B76',
+  'lightblue',
+  '#5A2328',
+  '#CFBAE1',
+  '#97F9F9',
+  '#EEB868',
+  '#456990'
 ];
 
 function drawRain() {
-  context.fillStyle = "ANOJS_COLOR_19";
+  context.fillStyle = "rgba(0, 0, 0, 0.05)";
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   context.font = fontSize + "px arial";

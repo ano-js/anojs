@@ -22,9 +22,9 @@ let mouse = {
 let goingRight = true;
 
 const colors = [
-    "ANOJS_COLOR_1",
-    "ANOJS_COLOR_2",
-    "ANOJS_COLOR_3"
+    "#00bdff",
+    "#4d39ce",
+    "#088eff"
 ];
 
 // Event Listener
@@ -94,7 +94,7 @@ let init = () => {
 
 let animate = () => {
     requestAnimationFrame(animate);
-    c.fillStyle = "ANOJS_COLOR_4";
+    c.fillStyle = "rgba(255, 255, 255, 0.05)";
     c.fillRect(0, 0, innerWidth, innerHeight);
 
     circles.forEach(circle => {
