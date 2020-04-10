@@ -97,13 +97,10 @@ function Circle(x, y, dx, dy, nx, ny, color) {
 function animate() {
   requestAnimationFrame(animate);
   context.clearRect(0, 0, innerWidth, innerHeight);
-<<<<<<< HEAD
   context.fillRect(0, 0,  screen.width, screen.height);
   context.fillStyle = 'rgb(34, 34, 34)';
-=======
   context.fillRect(0, 0, innerWidth, innerHeight);
   context.fillStyle = 'ANOJS_COLOR_11';
->>>>>>> b20f339b46a668bf36d94d2c8d46403a0440fa16
 
   for (var i = 0; i < arrCircle.length; i++) {
     arrCircle[i].update();
