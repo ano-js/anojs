@@ -9,6 +9,11 @@ let context = canvas.getContext('2d');
 
 console.log(canvas);
 
+let styleTag = document.createElement("style");
+document.head.appendChild(styleTag);
+styleTag.innerText = 'canvas {background-color: black;}'
+
+
 let mouse = {
   x: innerWidth,
   y: innerHeight
@@ -26,17 +31,18 @@ window.addEventListener('resize', function() {
   init();
 });
 
-let arrColor = [
-  'ANOJS_COLOR_1',
-  'ANOJS_COLOR_2',
-  'ANOJS_COLOR_3',
-  'ANOJS_COLOR_4',
-  'ANOJS_COLOR_5',
-  'ANOJS_COLOR_6',
-  'ANOJS_COLOR_7',
-  'ANOJS_COLOR_8',
-  'ANOJS_COLOR_9',
-  'ANOJS_COLOR_10'
+var arrColor = [
+  '#EFC7C2 ',
+  '#ACE4AA',
+  '#C3DFE0',
+  '#EFC7C2',
+  '#ACE4AA',
+  '#C3DFE0',
+  '#EFC7C2',
+  '#ACE4AA',
+  '#C3DFE0',
+  '#ACE4AA',
+  '#EFC7C2'
 ];
 
 let arrCircle = [];
@@ -97,13 +103,6 @@ function Circle(x, y, dx, dy, nx, ny, color) {
 function animate() {
   requestAnimationFrame(animate);
   context.clearRect(0, 0, innerWidth, innerHeight);
-<<<<<<< HEAD
-  context.fillRect(0, 0,  screen.width, screen.height);
-  context.fillStyle = 'rgb(34, 34, 34)';
-=======
-  context.fillRect(0, 0, innerWidth, innerHeight);
-  context.fillStyle = 'ANOJS_COLOR_11';
->>>>>>> b20f339b46a668bf36d94d2c8d46403a0440fa16
 
   for (var i = 0; i < arrCircle.length; i++) {
     arrCircle[i].update();

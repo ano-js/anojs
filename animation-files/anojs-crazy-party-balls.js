@@ -41,25 +41,9 @@ function Circle(x, y, dx, dy, radius, color) {
   };
 }
 
-let arrColor = [
-  "ANOJS_COLOR_1",
-  "ANOJS_COLOR_2",
-  "ANOJS_COLOR_3",
-  "ANOJS_COLOR_4",
-  "ANOJS_COLOR_5",
-  "ANOJS_COLOR_6",
-  "ANOJS_COLOR_7",
-  "ANOJS_COLOR_8 ",
-  "ANOJS_COLOR_9",
-  "ANOJS_COLOR_10",
-  "ANOJS_COLOR_11",
-  "ANOJS_COLOR_12",
-  "ANOJS_COLOR_13",
-  "ANOJS_COLOR_14",
-  "ANOJS_COLOR_15",
-  "ANOJS_COLOR_16",
-  "ANOJS_COLOR_17",
-  "ANOJS_COLOR_18",
+let arrColor = ['#502419', '#635380', '#D2BF55', '#9FFCDF', '#E9E3B4', '#C19875', '#F2E3BC',
+  '#618985 ', '#D34F73', '#DB7F67', '#0EB1D2', '#7A9B76', 'lightblue',
+  '#5A2328', '#CFBAE1', '#97F9F9', '#EEB868', '#456990'
 ];
 
 let arrCircle = [];
