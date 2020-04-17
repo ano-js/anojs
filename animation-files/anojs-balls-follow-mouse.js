@@ -9,6 +9,11 @@ let context = canvas.getContext('2d');
 
 console.log(canvas);
 
+let styleTag = document.createElement("style");
+document.head.appendChild(styleTag);
+styleTag.innerText = 'canvas {background-color: black;}'
+
+
 let mouse = {
   x: innerWidth,
   y: innerHeight
@@ -97,10 +102,6 @@ function Circle(x, y, dx, dy, nx, ny, color) {
 function animate() {
   requestAnimationFrame(animate);
   context.clearRect(0, 0, innerWidth, innerHeight);
-  context.fillRect(0, 0,  screen.width, screen.height);
-  context.fillStyle = 'rgb(34, 34, 34)';
-  context.fillRect(0, 0, innerWidth, innerHeight);
-  context.fillStyle = 'ANOJS_COLOR_11';
 
   for (var i = 0; i < arrCircle.length; i++) {
     arrCircle[i].update();
