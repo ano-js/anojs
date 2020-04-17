@@ -31,18 +31,17 @@ window.addEventListener('resize', function() {
   init();
 });
 
-var arrColor = [
-  '#EFC7C2 ',
-  '#ACE4AA',
-  '#C3DFE0',
-  '#EFC7C2',
-  '#ACE4AA',
-  '#C3DFE0',
-  '#EFC7C2',
-  '#ACE4AA',
-  '#C3DFE0',
-  '#ACE4AA',
-  '#EFC7C2'
+let arrColor = [
+  'ANOJS_COLOR_1',
+  'ANOJS_COLOR_2',
+  'ANOJS_COLOR_3',
+  'ANOJS_COLOR_4',
+  'ANOJS_COLOR_5',
+  'ANOJS_COLOR_6',
+  'ANOJS_COLOR_7',
+  'ANOJS_COLOR_8',
+  'ANOJS_COLOR_9',
+  'ANOJS_COLOR_10'
 ];
 
 let arrCircle = [];
