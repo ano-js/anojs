@@ -59,7 +59,7 @@ let arrColor = [
   "ANOJS_COLOR_15",
   "ANOJS_COLOR_16",
   "ANOJS_COLOR_17",
-  "ANOJS_COLOR_18",
+  "ANOJS_COLOR_18"
 ];
 
 let arrCircle = [];
