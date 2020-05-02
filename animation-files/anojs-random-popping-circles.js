@@ -14,7 +14,7 @@ canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext('2d');
 
-let randomColor = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
+let customColors = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
 
 class Circle {
     constructor(x, y, rad) {
@@ -22,7 +22,7 @@ class Circle {
         this.y = y;
         this.rad = rad;
         this.dir = true;
-        this.color = randomColor[Math.round(Math.random() * randomColor.length)];
+        this.color = customColors[Math.round(Math.random() * customColors.length)];
     }
     Render() {
         c.fillStyle = this.color;
@@ -34,7 +34,7 @@ class Circle {
         if (this.rad <= 1) {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.color = randomColor[Math.round(Math.random() * randomColor.length)];
+            this.color = customColors[Math.round(Math.random() * customColors.length)];
             this.dir = true;
         } else if (this.rad > Math.random() * 48) {
             this.dir = false;
