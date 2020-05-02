@@ -49,11 +49,11 @@ function init() {
         radius -= 7;
         nx -= 0.022 / 2;
         ny -= 0.022 / 2;
-        arrCircle.push(new Circle(x, y, dx, dy, nx, ny, radius, customColors[i]));
+        arrCircle.push(new Circle(x, y, dx, dy, nx, ny, radius, Math.floor(Math.random() * customColors.length)));
     }
 }
 
-function Circle(x, y, dx, dy, nx, ny, radius, color) {
+function Circle(x, y, dx, dy, nx, ny, radius, colorIndex) {
     this.x = x;
     this.y = y;
     this.dx = dx;
@@ -61,12 +61,12 @@ function Circle(x, y, dx, dy, nx, ny, radius, color) {
     this.nx = nx;
     this.ny = ny;
     this.radius = radius;
-    this.color = color;
+    this.colorIndex = colorIndex;
 
     this.draw = function() {
         context.beginPath();
         context.arc(this.x, this.y, Math.abs(this.radius), 0, Math.PI * 2, false);
-        context.fillStyle = color;
+        context.fillStyle = customColors[this.colorIndex];
         context.fill();
         context.closePath();
     }

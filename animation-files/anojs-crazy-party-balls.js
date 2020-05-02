@@ -11,18 +11,18 @@ let context = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-function Circle(x, y, dx, dy, radius, color) {
+function Circle(x, y, dx, dy, radius, colorIndex) {
   this.x = x;
   this.y = y;
   this.dx = dx;
   this.dy = dy;
   this.radius = radius;
-  this.color = color;
+  this.colorIndex = colorIndex;
 
   this.draw = function () {
     context.beginPath();
     context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    context.fillStyle = color;
+    context.fillStyle = customColors[this.colorIndex];
     context.fill();
   };
 
@@ -64,7 +64,7 @@ function init() {
         dx,
         dy,
         Math.abs(radius + 5),
-        customColors[Math.floor(Math.random() * customColors.length)]
+        Math.floor(Math.random() * customColors.length)
       )
     );
   }

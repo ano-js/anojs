@@ -11,7 +11,6 @@ let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2"];
 
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
-canvas.style.background = customColors[0];
 
 let bubblesArr;
 
@@ -28,7 +27,7 @@ function Bubbles(x, y, dirX, dirY, size, color) {
 Bubbles.prototype.draw = function() {
     context.beginPath();
     context.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-    context.fillStyle = this.color;
+    context.fillStyle = customColors[1];
     context.fill();
 }
 Bubbles.prototype.update = function() {
@@ -66,6 +65,8 @@ function animate() {
     for (i = 0; i < bubblesArr.length; i++) {
         bubblesArr[i].update();
     }
+
+    canvas.style.background = customColors[0];
 }
 init();
 animate();

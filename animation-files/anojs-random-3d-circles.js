@@ -33,7 +33,7 @@ class Ball {
   }
 
   draw() {
-    c.fillStyle = this.color;
+    c.fillStyle = customColors[1];
     c.strokeStyle = customColors[0];
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);

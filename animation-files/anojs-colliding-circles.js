@@ -17,8 +17,7 @@ var c = canvas.getContext("2d");
 let customColors = [
   "ANOJS_COLOR_1",
   "ANOJS_COLOR_2",
-  "ANOJS_COLOR_3",
-  "ANOJS_COLOR_4"
+  "ANOJS_COLOR_3"
 ];
 
 let mouse = {
@@ -38,7 +37,7 @@ addEventListener("resize", () => {
 })
 
 class Particle {
-    constructor(x, y, dx, dy, radius, strokeColor, fillColor) {
+    constructor(x, y, dx, dy, radius, colorIndex) {
         this.x = x;
         this.y = y;
         this.velocity = {
@@ -46,15 +45,14 @@ class Particle {
             y: dy
         };
         this.radius = radius;
-        this.strokeColor = strokeColor;
-        this.fillColor = fillColor;
         this.mass = 1;
         this.opacity = 0;
+        this.colorIndex = colorIndex;
     }
 
     draw() {
-        c.strokeStyle = this.strokeColor;
-        c.fillStyle = this.fillColor;
+        c.strokeStyle = customColors[this.colorIndex];
+        c.fillStyle = customColors[this.colorIndex];
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         c.save();
@@ -162,8 +160,7 @@ let init = () => {
         let dx = (Math.random() - 0.5) * 3;
         let dy = (Math.random() - 0.5) * 3;
         const radius = 15;
-        const strokeColor = customColors[Math.floor(Math.random() * customColors.length)];
-        const fillColor = customColors[customColors.indexOf(strokeColor)];
+        const colorIndex = Math.floor(Math.random() * customColors.length);
 
         if (i !== 0) {
             for (let j = 0; j < particles.length; j++) {
@@ -177,7 +174,7 @@ let init = () => {
             }
         }
 
-        let particle = new Particle(x, y, dx, dy, radius, strokeColor, fillColor);
+        let particle = new Particle(x, y, dx, dy, radius, colorIndex);
         particles.push(particle);
     }
 }

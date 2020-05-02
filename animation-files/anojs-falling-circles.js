@@ -19,7 +19,7 @@ const mouse = {
     y: undefined
 };
 
-const customColors = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
+let customColors = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
 
 // Event Listeners
 addEventListener('mousedown', (event) => {
@@ -46,22 +46,22 @@ addEventListener("resize", () => {
 
 // Objects
 class Ball {
-    constructor(x, y, dx, dy, radius, color) {
+    constructor(x, y, dx, dy, radius, colorIndex) {
         this.x = x;
         this.y = y;
         this.origY = y;
         this.dx = dx;
         this.dy = dy;
         this.radius = radius;
-        this.color = color;
+        this.colorIndex = colorIndex;
         this.gravity = 1;
     }
 
     draw() {
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        c.fillStyle = this.color;
-        c.strokeStyle = customColors[Math.floor(Math.random() * customColors.length)];;
+        c.fillStyle = customColors[this.colorIndex];
+        c.strokeStyle = customColors[this.colorIndex];
         c.stroke();
         c.fill();
     }
@@ -100,8 +100,8 @@ function init() {
         var dx = (Math.random() - 0.5) * 20;
         var dy = Math.random() * 5;
         var radius = 30;
-        var color = customColors[Math.floor(Math.random() * customColors.length)];
-        var ball = new Ball(x, y, dx, dy, radius, color);
+        var colorIndex = Math.floor(Math.random() * customColors.length);
+        var ball = new Ball(x, y, dx, dy, radius, colorIndex);
         balls.push(ball);
     }
 }

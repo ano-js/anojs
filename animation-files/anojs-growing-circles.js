@@ -35,17 +35,17 @@ var dx = 10;
 var dy = 10;
 var radius = 30;
 
-function Circle(x, y, dx, dy, radius, color) {
+function Circle(x, y, dx, dy, radius, colorIndex) {
     this.x = x;
     this.y = y;
     this.dx = dx;
     this.dy = dy;
     this.radius = radius;
     this.origRadius = radius;
-    this.color = color;
+    this.colorIndex = colorIndex;
 
     this.draw = function() {
-        c.fillStyle = this.color;
+        c.fillStyle = customColors[this.colorIndex];
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
         c.fill();
@@ -86,9 +86,9 @@ for (var i = 0; i < 500; i++) {
     var dx = (Math.random() - 0.5) * 3;
     var dy = (Math.random() - 0.5) * 3;
     var radius = (Math.random() * 5) + 5;
-    var color = customColors[Math.floor(Math.random() * customColors.length)];
+    var colorIndex = Math.floor(Math.random() * customColors.length);
 
-    circles.push(new Circle(x, y, dx, dy, radius, color));
+    circles.push(new Circle(x, y, dx, dy, radius, colorIndex));
 }
 
 function animate() {

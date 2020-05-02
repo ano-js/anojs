@@ -7,12 +7,8 @@ canvasDiv.innerHTML += "<canvas id='anojs-balls-follow-mouse-canvas'></canvas>";
 let canvas = document.getElementById('anojs-balls-follow-mouse-canvas');
 let context = canvas.getContext('2d');
 
-console.log(canvas);
-
-let styleTag = document.createElement("style");
-document.head.appendChild(styleTag);
-styleTag.innerText = 'canvas {background-color: black;}'
-
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 let mouse = {
   x: innerWidth,
@@ -34,14 +30,7 @@ window.addEventListener('resize', function() {
 let customColors = [
   'ANOJS_COLOR_1',
   'ANOJS_COLOR_2',
-  'ANOJS_COLOR_3',
-  'ANOJS_COLOR_4',
-  'ANOJS_COLOR_5',
-  'ANOJS_COLOR_6',
-  'ANOJS_COLOR_7',
-  'ANOJS_COLOR_8',
-  'ANOJS_COLOR_9',
-  'ANOJS_COLOR_10'
+  'ANOJS_COLOR_3'
 ];
 
 let arrCircle = [];
@@ -52,13 +41,15 @@ function init() {
   arrCircle = [];
 
   for (var i = 0; i < customColors.length; i++) {
-    let x = void 0;
-    let dx = void 0;
-    let y = void 0;
-    let dy = void 0;
-    nx -= 0.028 / 3;
-    ny -= 0.028 / 3;
-    arrCircle.unshift(new Circle(x, y, dx, dy, nx, ny, customColors[i]));
+    for (var j = 0; j < customColors.length; j++) {
+      let x = void 0;
+      let dx = void 0;
+      let y = void 0;
+      let dy = void 0;
+      nx -= 0.028 / 3;
+      ny -= 0.028 / 3;
+      arrCircle.unshift(new Circle(x, y, dx, dy, nx, ny, customColors[i + j]));
+    }
   }
 };
 

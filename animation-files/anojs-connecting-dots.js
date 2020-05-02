@@ -50,7 +50,7 @@ class Dot {
         if(this.y < 0) {
             this.vy *= -1;
         }
-        
+
         this.x += this.vx;
         this.y += this.vy;
 
@@ -73,7 +73,7 @@ class Dot {
                     c.lineWidth = 0.04;
                     c.strokeStyle = "rgba(255, 255, 255, 100)";
                     c.stroke();
-                }            
+                }
             }
         }
     }
@@ -87,8 +87,8 @@ class Vector2 {
 
     static Distance(v1, v2) {
         return Math.sqrt(Math.pow( v2.x - v1.x, 2 ) + Math.pow( v2.y - v1.y, 2));
-    }    
-    
+    }
+
 }
 
 let Initialize = function() {
@@ -110,12 +110,12 @@ let LOOP = function() {
 
 }
 
-let Render = function() {    
+let Render = function() {
     c.fillStyle = "#222";
     c.fillRect(0, 0, canvas.width, canvas.height);
     c.fillStyle = "#FFF";
     for(var i = 0; i < dots.length; i++) {
-        dots[i].Render();   
+        dots[i].Render();
     }
     for(var i = 0; i < dots_count; i++) {
             if(Vector2.Distance(new Vector2(mouse.x, mouse.y), dots[i].v) < 150) {
@@ -125,13 +125,13 @@ let Render = function() {
                 c.lineWidth = 0.05;
                 c.strokeStyle = "white";
                 c.stroke();
-            }            
+            }
     }
 }
 
-let Update = function() {    
+let Update = function() {
     for(var i = 0; i < dots.length; i++) {
-        dots[i].Update();   
+        dots[i].Update();
     }
 }
 
