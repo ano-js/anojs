@@ -1,3 +1,5 @@
+// jabo-bernardo
+
 let canvasDiv = document.querySelector("#anojs-night-star");
 canvasDiv.innerHTML += "<canvas id='anojs-night-star-canvas'></canvas>";
 let canvas = document.querySelector("#anojs-night-star-canvas");
@@ -61,9 +63,9 @@ class Star {
     }
 
     render() {
-        
+
         drawStar(this.x, this.y, this.sides, 2, 1, `rgb(${Math.random() * this.color}, ${this.color + 20}, ${this.color + 20})`);
-        
+
     }
 }
 
@@ -71,7 +73,7 @@ let stars = [];
 
 // Initialization
 let init = function() {
-    
+
     for(let i = 0; i < starCount; i++) {
         stars.push(new Star( RandomBetween(0, canvas.width), RandomBetween(0, canvas.height), RandomBetween(minimumStarSize, maximumStarSize), RandomBetween(0.1, 1) ));
     }
@@ -80,7 +82,7 @@ let init = function() {
 
 // Visualization
 let render = function() {
-    
+
     c.fillStyle = "#000011"
     c.fillRect(0, 0, canvas.width, canvas.height);
     for(let i = 0; i < starCount; i++) {
