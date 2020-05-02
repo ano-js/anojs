@@ -14,6 +14,8 @@ canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext("2d");
 
+let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2"];
+
 // Event Listeners
 addEventListener("resize", () => {
   innerWidth = window.innerWidth;
@@ -32,7 +34,7 @@ class Ball {
 
   draw() {
     c.fillStyle = this.color;
-    c.strokeStyle = "ANOJS_COLOR_1";
+    c.strokeStyle = customColors[0];
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.stroke();
@@ -56,7 +58,7 @@ let init = () => {
     let dx = (Math.random() - 0.5) * 10;
     let dy = (Math.random() - 0.5) * 10;
     let radius = 30;
-    let color = "ANOJS_COLOR_2";
+    let color = customColors[1];
 
     let ball = new Ball(x, y, dx, dy, radius, color);
     balls.push(ball);

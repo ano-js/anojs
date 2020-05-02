@@ -14,6 +14,8 @@ canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext("2d");
 
+let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3", "ANOJS_COLOR_4", "ANOJS_COLOR_5"]
+
 let mouse = {
     x: undefined,
     y: undefined
@@ -57,7 +59,7 @@ class Particle {
 
     draw() {
         if (this.centroid) {
-            c.fillStyle = "ANOJS_COLOR_1";
+            c.fillStyle = customColors[0];
         } else {
             c.fillStyle = this.color;
         }
@@ -68,7 +70,7 @@ class Particle {
         c.fill();
         c.closePath();
         c.shadowBlur = 0;
-        c.shadowColor = "ANOJS_COLOR_2";
+        c.shadowColor = customColors[1];
     }
 
     update(particles) {
@@ -109,7 +111,7 @@ let init = () => {
         let dx = (Math.random() - 0.5) * 2;
         let dy = (Math.random() - 0.5) * 2;
         let radius = 5;
-        let color = "ANOJS_COLOR_3";
+        let color = customColors[2];
 
         let particle = new Particle(x, y, dx, dy, radius, color, false);
         particles.push(particle);
@@ -124,8 +126,8 @@ let animate = () => {
     requestAnimationFrame(animate);
     // Background
     var grd = c.createLinearGradient(innerWidth / 2, 0, innerWidth / 2, innerHeight);
-    grd.addColorStop(0, "ANOJS_COLOR_4");
-    grd.addColorStop(1, "ANOJS_COLOR_5");
+    grd.addColorStop(0, customColors[3]);
+    grd.addColorStop(1, customColors[4]);
 
     c.fillStyle = grd;
     c.fillRect(0, 0, innerWidth, innerHeight);

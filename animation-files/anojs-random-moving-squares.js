@@ -14,7 +14,7 @@ canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext('2d');
 
-let randomColor = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
+let customColors = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
 
 class Square {
     constructor(x, y, w) {
@@ -22,7 +22,7 @@ class Square {
         this.y = y;
         this.w = w;
         this.dir = true;
-        this.color = randomColor[Math.round(Math.random() * randomColor.length)];
+        this.color = customColors[Math.round(Math.random() * customColors.length)];
     }
     Render() {
         c.fillStyle = this.color;
@@ -32,7 +32,7 @@ class Square {
         if (this.w <= 1) {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.color = randomColor[Math.round(Math.random() * randomColor.length)];
+            this.color = customColors[Math.round(Math.random() * customColors.length)];
             this.dir = true;
         } else if (this.w > Math.random() * 64) {
             this.dir = false;

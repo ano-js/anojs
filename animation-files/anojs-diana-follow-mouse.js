@@ -27,17 +27,10 @@ window.addEventListener('resize', function() {
     init();
 });
 
-var arrColor = [
+var customColors = [
     'ANOJS_COLOR_1',
     'ANOJS_COLOR_2',
-    'ANOJS_COLOR_3',
-    'ANOJS_COLOR_4',
-    'ANOJS_COLOR_5',
-    'ANOJS_COLOR_6',
-    'ANOJS_COLOR_7',
-    'ANOJS_COLOR_8',
-    'ANOJS_COLOR_9',
-    'ANOJS_COLOR_10'
+    'ANOJS_COLOR_3'
 ];
 
 var arrCircle = [];
@@ -48,7 +41,7 @@ var radius = 70;
 function init() {
     arrCircle = [];
 
-    for (var i = 0; i < arrColor.length; i++) {
+    for (var i = 0; i < customColors.length; i++) {
         var x = void 0;
         var dx = void 0;
         var y = void 0;
@@ -56,7 +49,7 @@ function init() {
         radius -= 7;
         nx -= 0.022 / 2;
         ny -= 0.022 / 2;
-        arrCircle.push(new Circle(x, y, dx, dy, nx, ny, radius, arrColor[i]));
+        arrCircle.push(new Circle(x, y, dx, dy, nx, ny, radius, customColors[i]));
     }
 }
 

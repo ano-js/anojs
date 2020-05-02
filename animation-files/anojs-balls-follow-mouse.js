@@ -31,7 +31,7 @@ window.addEventListener('resize', function() {
   init();
 });
 
-let arrColor = [
+let customColors = [
   'ANOJS_COLOR_1',
   'ANOJS_COLOR_2',
   'ANOJS_COLOR_3',
@@ -51,14 +51,14 @@ let ny = 0.125;
 function init() {
   arrCircle = [];
 
-  for (var i = 0; i < arrColor.length; i++) {
+  for (var i = 0; i < customColors.length; i++) {
     let x = void 0;
     let dx = void 0;
     let y = void 0;
     let dy = void 0;
     nx -= 0.028 / 3;
     ny -= 0.028 / 3;
-    arrCircle.unshift(new Circle(x, y, dx, dy, nx, ny, arrColor[i]));
+    arrCircle.unshift(new Circle(x, y, dx, dy, nx, ny, customColors[i]));
   }
 };
 

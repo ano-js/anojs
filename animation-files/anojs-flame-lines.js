@@ -14,6 +14,8 @@ canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext("2d");
 
+let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3"];
+
 class Line {
     constructor() {
         this.Initialize();
@@ -27,11 +29,11 @@ class Line {
         this.vel = Math.random() * 5;
         this.color = 'black';
         if(this.h <= 12)
-            this.color = 'ANOJS_COLOR_1';
+            this.color = customColors[0];
         else if(this.h > 12 && this.h < 16)
-            this.color = 'ANOJS_COLOR_2';
+            this.color = customColors[1];
         else if(this.h > 16)
-            this.color = 'ANOJS_COLOR_3';
+            this.color = customColors[2];
     }
 
     Update() {

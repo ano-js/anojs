@@ -7,9 +7,11 @@ canvasDiv.innerHTML += "<canvas id='anojs-float-bubbles-canvas'></canvas>";
 let canvas = document.getElementById('anojs-float-bubbles-canvas');
 let context = canvas.getContext('2d');
 
+let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2"];
+
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
-canvas.style.background = 'ANOJS_COLOR_1';
+canvas.style.background = customColors[0];
 
 let bubblesArr;
 
@@ -51,7 +53,7 @@ function init() {
         let y = Math.random() * (innerHeight - size * 2);
         let dirX = (Math.random() * 0.4) - 0.2;
         let dirY = (Math.random() * 0.4) - 0.2;
-        let color = 'ANOJS_COLOR_2';
+        let color = customColors[1];
 
         bubblesArr.push(new Bubbles(x, y, dirX, dirY, size, color));
     }

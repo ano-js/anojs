@@ -76,7 +76,7 @@ function Circle(x, y, dx, dy, radius, color) {
 
 var circle = new Circle(x, y, dx, dy, radius);
 
-var colorArray = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3", "ANOJS_COLOR_4"];
+var customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2", "ANOJS_COLOR_3"];
 
 var circles = [];
 
@@ -86,7 +86,7 @@ for (var i = 0; i < 500; i++) {
     var dx = (Math.random() - 0.5) * 3;
     var dy = (Math.random() - 0.5) * 3;
     var radius = (Math.random() * 5) + 5;
-    var color = colorArray[Math.floor(Math.random() * colorArray.length)];
+    var color = customColors[Math.floor(Math.random() * customColors.length)];
 
     circles.push(new Circle(x, y, dx, dy, radius, color));
 }

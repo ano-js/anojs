@@ -14,18 +14,11 @@ canvas.height = canvas.offsetHeight;
 
 var c = canvas.getContext("2d");
 
-let strokeColorArray = [
-    "ANOJS_COLOR_1",
-    "ANOJS_COLOR_2",
-    "ANOJS_COLOR_3",
-    "ANOJS_COLOR_4"
-];
-
-let fillColorArray = [
-    "ANOJS_COLOR_5",
-    "ANOJS_COLOR_6",
-    "ANOJS_COLOR_7",
-    "ANOJS_COLOR_8"
+let customColors = [
+  "ANOJS_COLOR_1",
+  "ANOJS_COLOR_2",
+  "ANOJS_COLOR_3",
+  "ANOJS_COLOR_4"
 ];
 
 let mouse = {
@@ -169,8 +162,8 @@ let init = () => {
         let dx = (Math.random() - 0.5) * 3;
         let dy = (Math.random() - 0.5) * 3;
         const radius = 15;
-        const strokeColor = strokeColorArray[Math.floor(Math.random() * strokeColorArray.length)];
-        const fillColor = fillColorArray[strokeColorArray.indexOf(strokeColor)];
+        const strokeColor = customColors[Math.floor(Math.random() * customColors.length)];
+        const fillColor = customColors[customColors.indexOf(strokeColor)];
 
         if (i !== 0) {
             for (let j = 0; j < particles.length; j++) {

@@ -11,6 +11,8 @@ canvas.height = canvas.offsetHeight;
 
 let c = canvas.getContext("2d");
 
+let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2"];
+
 class MouseData {
     constructor() {
         this.mouseLastPosition = [];
@@ -35,7 +37,7 @@ class MouseData {
                 c.lineTo(this.mouseLastPosition[i].x,this.mouseLastPosition[i].y);
             }
         }
-        c.fillStyle = "ANOJS_COLOR_1";
+        c.fillStyle = customColors[0];
         c.fill();
 
     }
@@ -45,7 +47,7 @@ let mouse = new MouseData();
 
 let animationLoop = function() {
 
-    c.fillStyle = 'ANOJS_COLOR_2';
+    c.fillStyle = customColors[1];
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     mouse.update();

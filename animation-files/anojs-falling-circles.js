@@ -19,7 +19,7 @@ const mouse = {
     y: undefined
 };
 
-const colors = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3', 'ANOJS_COLOR_4'];
+const customColors = ['ANOJS_COLOR_1', 'ANOJS_COLOR_2', 'ANOJS_COLOR_3'];
 
 // Event Listeners
 addEventListener('mousedown', (event) => {
@@ -61,7 +61,7 @@ class Ball {
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         c.fillStyle = this.color;
-        c.strokeStyle = "ANOJS_COLOR_5";
+        c.strokeStyle = customColors[Math.floor(Math.random() * customColors.length)];;
         c.stroke();
         c.fill();
     }
@@ -100,7 +100,7 @@ function init() {
         var dx = (Math.random() - 0.5) * 20;
         var dy = Math.random() * 5;
         var radius = 30;
-        var color = colors[Math.floor(Math.random() * colors.length)];
+        var color = customColors[Math.floor(Math.random() * customColors.length)];
         var ball = new Ball(x, y, dx, dy, radius, color);
         balls.push(ball);
     }
