@@ -1,3 +1,5 @@
+// handao16
+
 var canvasDiv = document.getElementById('anojs-colorful-particles');
 let canvas = document.getElementById('anojs-colorful-particles-canvas');
 canvas.width = window.innerWidth;
@@ -17,11 +19,11 @@ var maxRadius = 40;
 var minRadius = 5;
 
 var colorArray = [
-    '#D95284',
-    '#044BD9',
-    '#0442BF',
-    '#0476D9',
-    '#F27E63'
+    'ANOJS_COLOR_1',
+    'ANOJS_COLOR_2',
+    'ANOJS_COLOR_3',
+    'ANOJS_COLOR_4',
+    'ANOJS_COLOR_5'
 ];
 window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
@@ -43,12 +45,11 @@ function Circle(x, y, dx, dy, radius) {
     this.dy = dy;
     this.radius = radius;
     this.minRadius = radius;
-    this.color =  colorArray[Math.floor(Math.random() * colorArray.length)];
 
     this.draw = function() {
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        c.fillStyle = this.color;
+        c.fillStyle = colorArray[Math.floor(Math.random() * colorArray.length)];
         c.fill();
     }
 
