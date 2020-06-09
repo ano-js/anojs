@@ -1,9 +1,13 @@
 // handao16
 
 var canvasDiv = document.getElementById('anojs-colorful-particles');
-let canvas = document.getElementById('anojs-colorful-particles-canvas');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvasDiv.innerHTML += "<canvas id='anojs-colorful-particles-canvas'></canvas>";
+let canvas = document.getElementById("anojs-colorful-particles-canvas");
+
+canvas.style.width = '100%';
+canvas.style.height = '100%';
+canvas.width = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
 
 
 var c = canvas.getContext('2d');
@@ -57,11 +61,11 @@ function Circle(x, y, dx, dy, radius) {
         if(this.x + this.radius > innerWidth || this.x - radius < 0) {
             this.dx = -this.dx;
         }
-    
+
         if(this.y + this.radius > innerHeight || this.y - radius < 0) {
             this.dy = -this.dy
         }
-    
+
         this.x += this.dx;
         this.y += this.dy;
 
