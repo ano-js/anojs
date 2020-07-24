@@ -1,8 +1,9 @@
 //tsukisuperior
+
 var squares = [];
-let canvasDiv = document.getElementById("anojs-wandering-square");
-canvasDiv.id = "anojs-wandering-square";
-let canvas = document.getElementById("anojs-wandering-square");
+let canvasDiv = document.getElementById("anojs-resize-window-glitch-effect");
+canvasDiv.id = "anojs-resize-window-glitch-effect";
+let canvas = document.getElementById("anojs-resize-window-glitch-effect");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let context = canvas.getContext("2d");
