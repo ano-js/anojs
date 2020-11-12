@@ -1,3 +1,4 @@
 This is the file to modify when make your first pull request! Please change anything about this file (besides this introduction) and then make a pull request after you've made a small change!
 Welcome to Ano.js! We're excited to have you on board!!
 Hi, this is Sirisha! Sorry that I haven't been active even though I joined your discord a few weeks ago! Just to let you know a little bit about me, I know HTML, CSS, and Python, but not really anything with Javascript :/
+Hey, this is tsukisuperior, and I know a little javascript, but I hope to learn from this project.
