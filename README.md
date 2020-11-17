@@ -31,7 +31,10 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
 <b> You can become a contributor today just by going to [anojs.com/join-us](https://anojs.com/join-us) and entering your GitHub username. </b>
 
 ## What do Ano.js contributors do?
-Ano.js contributors are in charge to creating web animations and deploying it for users to use. It is a great way to improve your skills while also being a part of a strong team.
+- Create new web animations with new technology
+- Get guidance and mentorship from fellow contributors
+- Deploy web animations for real Ano.js users to use
+- Learn how to use new animation technology to create something new
 
 ## Why should I contribute?
 <b> All animations that you create give you recognition. </b> The more contributions you make, the higher you will be ranked on the [Ano.js team page](https://anojs.com/our-team). Each animation you create will have your name next to it, we track how many people use your animations, and the more active you are the higher chance it is for you to be contacted for a staff position at Ano.js.
