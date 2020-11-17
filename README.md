@@ -11,6 +11,12 @@ For privacy reasons, we've hosted the source code for our engine privately :)
 ## Why use Ano.js?
 Ano.js was designed to be simple. Our team develops and formats the animations, so the user can use it in their website just by copy-pasting two lines of code! Instead of Anime.js and Mo.js where you have to code and create the animation yourself, we just did it for you!
 
+## What do Ano.js contributors do?
+- Create new web animations with new technology
+- Get guidance and mentorship from fellow contributors
+- Deploy web animations for real Ano.js users to use
+- Learn how to use new animation technology to create something new
+
 ## Why should you be a contributor?
 - <b> Paste it on your LinkedIn </b>
   - Great work experience to show
@@ -29,12 +35,6 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
   - Network with fellow collaborators
   
 <b> You can become a contributor today just by going to [anojs.com/join-us](https://anojs.com/join-us) and entering your GitHub username. </b>
-
-## What do Ano.js contributors do?
-- Create new web animations with new technology
-- Get guidance and mentorship from fellow contributors
-- Deploy web animations for real Ano.js users to use
-- Learn how to use new animation technology to create something new
 
 ## Why should I contribute?
 <b> All animations that you create give you recognition. </b> The more contributions you make, the higher you will be ranked on the [Ano.js team page](https://anojs.com/our-team). Each animation you create will have your name next to it, we track how many people use your animations, and the more active you are the higher chance it is for you to be contacted for a staff position at Ano.js.
