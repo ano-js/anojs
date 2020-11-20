@@ -44,7 +44,7 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
       - Turn on notifications
     - Get help, announcements, and updates on Ano.js
     - Chat with fellow contributors
-3. <b> Check out [/contributors/CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing </b>
+3. <b> Check out [CONTRIBUTORS.md](contributors/CONTRIBUTORS.md) for more in-depth information on contributing </b>
 4. <b> Make your first contribution! </b>
     - Simply make a pull request titled "First Contribution" and we will accept it!
 
