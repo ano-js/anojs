@@ -1,12 +1,8 @@
-# Ano.js Animations
+# Ano.js
 
 <b> Visit our website at [anojs.com](https://anojs.com)! </b>
 
 Ano.js is a free, open source web animation library that makes creating beautiful designs a whole lot easier. Ano.js is designed in the interest of simplifying the process of creating and integrating web animations into your website. 
-
-For privacy reasons, we've hosted the source code for our engine privately :)
-
-<b> Become an open source contributor now at [anojs.com/join-us](https://anojs.com/join-us) and entering your GitHub username. </b>
 
 ## Why use Ano.js?
 Ano.js was designed to be simple. Our team develops and formats the animations, so the user can use it in their website just by copy-pasting two lines of code! Instead of Anime.js and Mo.js where you have to code and create the animation yourself, we just did it for you!
@@ -33,8 +29,6 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
 - <b> Gain experience </b>
   - Learn more about software engineering
   - Network with fellow collaborators
-  
-<b> You can become a contributor today just by going to [anojs.com/join-us](https://anojs.com/join-us) and entering your GitHub username. </b>
 
 ## Why should I contribute?
 <b> All animations that you create give you recognition. </b> The more contributions you make, the higher you will be ranked on the [Ano.js team page](https://anojs.com/our-team). Each animation you create will have your name next to it, we track how many people use your animations, and the more active you are the higher chance it is for you to be contacted for a staff position at Ano.js.
@@ -44,20 +38,19 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
 <b> We try to make your job as easy as possible. </b> There are a lot of rules to follow when formatting animations for open use. Instead of you doing it, we've taken the responsibility of formatting your animations for you. You worry about making the animations, and we'll take care of the rest.
 
 ## How do I get started?
-1. <b> [Become an Ano.js contributor](https://anojs.com/join-us) </b>
-2. <b> Be sure to star and watch this repository </b>
+1. <b> Be sure to star and watch this repository </b>
     - Will provide updates
-3. <b> [Join our Discord Server!](https://discord.gg/xkdRm7E)  </b>
+2. <b> [Join our Discord Server!](https://discord.gg/xkdRm7E)  </b>
     - Make sure to get Discord on desktop and mobile
       - Turn on notifications
     - Get help, announcements, and updates on Ano.js
     - Chat with fellow contributors 
-4. <b> Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing </b>
-5. <b> Make your first contribution! </b>
+3. <b> Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing </b>
+4. <b> Make your first contribution! </b>
     - Simply make a pull request titled "First Contribution" and we will accept it!
   
 
 ## Questions?
-If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question, or you can send a message in our [Discord channel](https://discord.gg/xkdRm7E).
+If you have any questions, feel free to [open an issue](https://github.com/ano-js/anojs/issues) describing your problem or question, or you can send a message in our [Discord](https://discord.gg/xkdRm7E).
 
-You can also directly contact Calix Huang at calix.huang1@gmail.com
+You can also directly contact Calix Huang at me@calix.dev.
