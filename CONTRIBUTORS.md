@@ -4,9 +4,7 @@
 
 Thank you so much for being a part of the Ano.js team! This is a great way to get involved with the community, as well as improving your software engineering skills and your professional career. Below is more information on what your job is, what you will be doing, and how you will do it.
 
-Make sure you [join our discord channel](https://discord.gg/xkdRm7E) to stay updated on Ano.js and get help with whatever you need!
-
-<b> If you are not already a contributor, become one at [anojs.com/join-us](https://anojs.com/join-us)! </b>
+Make sure you join our [Discord](https://discord.gg/xkdRm7E) to stay updated on Ano.js and get help with whatever you need!
 
 
 ## What do contributors do?
@@ -74,9 +72,9 @@ The way to contribute to Ano.js is very simple:
 
 ## Questions?
 
-If you have any questions, feel free to [open an issue](https://github.com/anojs/anojs-animations/issues) describing your problem or question, or you can send a message in our [discord](https://discord.gg/erjPPV8).
+If you have any questions, feel free to [open an issue](https://github.com/ano-js/anojs/issues) describing your problem or question, or you can send a message in our [Discord](https://discord.gg/xkdRm7E).
 
-You can also directly contact Calix Huang at calix.huang1@gmail.com
+You can also directly contact Calix Huang at me@calix.dev.
 
 
 
