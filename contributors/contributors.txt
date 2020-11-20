@@ -1,5 +1,3 @@
-# Contributors' file
-
-This is the file to modify when make your first pull request! 
+This is the file to modify when make your first pull request!
 
 Change anything about this file (besides this introduction) and then make a pull request after you've made a small change!

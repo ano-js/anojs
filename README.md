@@ -2,7 +2,7 @@
 
 <b> Visit our website at [anojs.com](https://anojs.com)! </b>
 
-Ano.js is a free, open source web animation library that makes creating beautiful designs a whole lot easier. Ano.js is designed in the interest of simplifying the process of creating and integrating web animations into your website. 
+Ano.js is a free, open source web animation library that makes creating beautiful designs a whole lot easier. Ano.js is designed in the interest of simplifying the process of creating and integrating web animations into your website.
 
 ## Why use Ano.js?
 Ano.js was designed to be simple. Our team develops and formats the animations, so the user can use it in their website just by copy-pasting two lines of code! Instead of Anime.js and Mo.js where you have to code and create the animation yourself, we just did it for you!
@@ -25,8 +25,7 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
   - Collaborators with the most amount of contributions are shown the most
   - You receive credit for animations you create
   - We keep track of how many people use your animations
-  - You can see your profile on display at [anojs.com/our-team](https://anojs.com/our-team) if you're a contributor
-- <b> Gain experience </b>
+  - <b> Gain experience </b>
   - Learn more about software engineering
   - Network with fellow collaborators
 
@@ -44,11 +43,11 @@ Ano.js was designed to be simple. Our team develops and formats the animations, 
     - Make sure to get Discord on desktop and mobile
       - Turn on notifications
     - Get help, announcements, and updates on Ano.js
-    - Chat with fellow contributors 
-3. <b> Check out [CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing </b>
+    - Chat with fellow contributors
+3. <b> Check out [contributors/CONTRIBUTORS.md](CONTRIBUTORS.md) for more in-depth information on contributing </b>
 4. <b> Make your first contribution! </b>
     - Simply make a pull request titled "First Contribution" and we will accept it!
-  
+
 
 ## Questions?
 If you have any questions, feel free to [open an issue](https://github.com/ano-js/anojs/issues) describing your problem or question, or you can send a message in our [Discord](https://discord.gg/xkdRm7E).

@@ -69,13 +69,15 @@ The way to contribute to Ano.js is very simple:
 - Make your code readable
 - Follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
+## First steps
+What do I do first?
+* Visit the [contributors.txt](contributors.txt) file
+* Make any change to that file (besides the introduction)
+* Make a pull request submitting those changes
+* We will accept & merge it
+* Congrats! You're officially an Ano.js contributor :)
 
 ## Questions?
-
 If you have any questions, feel free to [open an issue](https://github.com/ano-js/anojs/issues) describing your problem or question, or you can send a message in our [Discord](https://discord.gg/xkdRm7E).
 
 You can also directly contact Calix Huang at me@calix.dev.
-
-
-
-
