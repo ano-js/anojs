@@ -11,7 +11,7 @@ canvas.height = canvas.offsetHeight;
 
 let context = canvas.getContext('2d');
 
-let customColors = ["#296e85", "ANOJS_COLOR_2"];
+let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2"];
 
 
 window.addEventListener('resize', () => {
