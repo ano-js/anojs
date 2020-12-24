@@ -1,3 +1,5 @@
+// trdavidt
+
 let canvasDiv = document.querySelector("#anojs-particle-shower");
 canvasDiv.innerHTML += "<canvas id='anojs-particle-shower-canvas'></canvas>";
 let canvas = document.querySelector("#anojs-particle-shower-canvas");
@@ -9,12 +11,12 @@ canvas.height = canvas.offsetHeight;
 
 let context = canvas.getContext('2d');
 
-let customColors = ["ANOJS_COLOR_1", "ANOJS_COLOR_2"];
+let customColors = ["#296e85", "ANOJS_COLOR_2"];
 
 
 window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;  
+  canvas.height = window.innerHeight;
 });
 
 class Particle {
@@ -31,7 +33,7 @@ class Particle {
 
   draw() {
     context.beginPath();
-    context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);    
+    context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
     context.fillStyle = customColors[0];
     context.fill();
   }
@@ -73,7 +75,7 @@ function animate() {
     particles[i].update();
     particles[i].draw();
   }
-  
+
   init();
   canvas.style.background = customColors[1];
 }
